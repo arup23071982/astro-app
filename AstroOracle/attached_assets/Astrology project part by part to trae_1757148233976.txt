@@ -1,0 +1,344 @@
+# Scope of work:-Stunning ,all possible global multilingual support ( all possible Indian languages including hindi, Bengali and all possible global languages ,by default language is English ) unique ,grand looking, robust, Global, fully legally secured , No man power-fully automated ( except consultation that will be done between me i.e astrologer and my clients who booked an appointment making payment for consultation rest of the consultation part should be done automatically) with best 3D web application with adding best all possible animations, lighting and colouring features( use these features on all possible part of my work ). Very good UI & UX . 
+My full application UI design will be with best (Neon glow + Glassmorphism). Web application should be well responsive in desktop, mobile and tab devices.
+Remember well: always Add possible best different types of stunning 3D realistic highly all possible animated best background for all UI pages that will be suitable for my this astrological application.
+Add experience of Astrologer Arup Shastri’s +18 years in home page  and all possible pages particularly on Astrologer’s profile / About astrologer/similar pages.
+Home page [UI design will be with best (Neon glow + Glassmorphism)] will be with best all possible required menus (header), best type of footer and best 3D realistic view type highly animated night background filled with animated stars, comets and 9 colorful planets moving across the full background. All main features of my business should be visible and accessible via home page also.
+SEO ranking should be so high that my web application should be placed on top on all web browsers and related matter. Web application should be very fast. After completing web application ,you have to create an android native app ( replica of web application ). I want to use scaffolding project method for fast completion of project as soon as possible
+Remember: This is my personal business only. No other astrologer will be added here.Try to use all possible features and plans that will be at free of cost as much as possible. Where paid features or paid APIs are required, imeplement those after giving me best suggestion and taking my consent.
+You have to do all project work automatically as much as possible with taking my minimum involment. Add your more advanced sophisticated plan to the part of my work where something specifically not mentioned or mentioned very little. Ask me each time before implementation of any part of my work .You can suggest more possible good and advanced features for my 3D web-application and for business promotion. Always show your best quality with best work can give me. Minimum mandatory requirements has been given below:-
+1. Core Application Information & Setup
+Application Name: "Jai Guru Astro Remedy" (This will be the displayed name, customizable through the admin dashboard).
+Purpose: To offer and manage personalized astrological consultations (live video call, chat, voice call, and in-person), provide structured astrology learning courses, and sell astrological remedy products globally. The application ensures my exclusive role as the service provider.
+Domain & Hosting: The application will be deployed on my existing domain: www.jaiguruastroremedy.com and Vercel hosting (free tier). The chosen technology stack must be compatible with standard web hosting environments (e.g., LAMP stack for PHP/MySQL, or a host supporting Node.js/Python applications).
+Specially Remember: you have to suggest all possible best plan and features for each part of project if you think that more better planning and advanced features are possible for my project and can implement those parts after taking my consent.
+Target Audience: My personal astrology clients and students ( curious to learn astrology) globally.
+Frontend: Modern JavaScript framework (e.g., React, Vue.js, Angular) for interactive and animated UI. Utilize a powerful CSS framework like Tailwind CSS or similar for responsive and aesthetically pleasing design.
+Backend: A scalable server-side language/ framework (e.g., Node.js with Express, Python with Django/Flask, or PHP with Laravel) to handle business logic, data processing, and API endpoints. Choose based on hosting compatibility.
+Database: A flexible and secure database ( MongoDB or other whatever you thing better for my project). After completion of web development firstly I want to see, check, test it on my localserver  (recommended by you ) compatible with the chosen backend and hosting. I have seen that many AI model faces problems during deployment of application via local server. So suggest best free localserver. You should try to work from the beginning such a way so that version mismatch and dependency file issues do not occur during development.
+Communication & Notifications:
+For real-time in-app video call and audio calls- Jitsi Meet's audio capabilities will be used for free app-to-app voice calls ( if you have other best suitable free plan you can suggest for ) between astrologer (me, My Name is “Arup Shastri”)
+Video call: Integrate Jitsi Meet for secure and free video conferencing (using its public instances or a self-hosted one if feasible with the hosting).
+In-app chat functionality will be implemented without relying on any paid third-party APIs or services (no external SDKs with free trials leading to pro plans). This will be built using core web technologies like WebSockets and a suitable backend framework to ensure it remains free of recurring external cost. Suggest your best free ( not paid ) chat option suitable for my application and my business.
+Maximize automatic in-app messages and notifications directly to students'/clients' profiles/dashboards (e.g., welcome, booking confirmations, order updates, report availability, course progress).
+All notifications (email/SMS reminders for consultations/orders) will be transactional and essential for service delivery, using a budget-friendly OTP service provider with global SMS capabilities that also supports basic transactional email sending( you can add all required free and paid API 
+Payment Gateway: Use Razorpay & Cashfree for transaction within India. And Use Stripe and Paypal for  international transaction.
+External APIs (Preference for Free/Open Source/Budget-Friendly Tiers):
+Time Zone Lookups: Integrate with a reliable, free timezone API or database (e.g., the IANA Time Zone Database often used with libraries like moment-timezone or date-fns-tz in JavaScript, or pytz in Python) for accurate display of local times for global bookings.
+Geolocation: A free geolocation API for city/country lookups when entering client details (e.g., OpenCage Data Geocoding API with a free tier, or OpenStreetMap's Nominatim API) to assist in consultation scheduling and global physical delivery.
+OTP Verification/Transactional SMS & Email: You have all ready done it . You should use twilio’s SMS and AMAZON’s free emails for implementing automation process in my project work. But remember that try to use sending automatic notifications within app ( such as, join live class, buy this new product,reminders for consultancy before 24 hours,1 hours and at the time of starting consultation )as much as possible by using code or other free method. SMS and Emails should be used when these are mandatory. Do not waste SMS and Emails using it where these are not mandatory.
+LLM for Content Assistance: You can use the Gemini API (which has free tiers) or other to assist me in generating textual content like product descriptions, course outlines, or marketing messages. This is not for automated astrological interpretations.
+2. User Authentication & Security (Admin and Client/Astrology student Accounts): All global phone codes [ all countries of world , by default code  display = +91 ( India ) ]should be available during sign up or sign in. 
+1. User Identification Strategy
+Primary Identifier: Unique User ID (auto-generated UUID)
+Secondary Identifiers:
+Mobile number (verification required)
+Email (optional, for recovery)
+Government ID (Aadhaar/Passport - for high-risk actions)
+2. Registration Flow
+User enters:
+Mobile number (mandatory)
+Email (optional)
+Password (strong requirements)
+System sends OTP to mobile
+Upon verification:
+Generate unique User ID
+Store hashed password
+Mark mobile as verified
+Create user profile
+3. Login Options
+Option A: Mobile + OTP
+Option B: User ID + Password
+Option C: Mobile + Password
+4. Mobile Number Change Process
+User requests mobile number change
+System requires:
+Current password
+OTP to old number (if available)
+OTP to new number
+7-day holding period before old number is released
+Notify all connected devices/emails about the change
+5. Lost Mobile Protection
+Temporary Account Freeze:
+User reports lost mobile
+Account enters "recovery mode"
+Require email verification + security questions
+Mobile Number Recycling Protection:
+30-day quarantine for released numbers
+Require additional verification for recycled numbers
+Flag potential number reuse for manual review
+6. Legal Compliance Features
+Audit Logging:
+All authentication attempts
+Profile changes
+Device/IP tracking
+Data Retention:
+Keep logs for required legal period
+Anonymize data where possible
+Consent Management:
+Clear terms of service
+Data usage policies
+Right to be forgotten
+7. Security Measures
+Rate limiting on login attempts
+Suspicious activity detection
+Multi-factor authentication options
+Session management
+Regular security audits
+Implementation Recommendation
+Database Schema:
+Users table (UserID, HashedPassword, Status)
+User_Contacts (UserID, Mobile, Email, IsVerified, IsPrimary)
+Auth_Logs (Timestamp, UserID, IP, Device, Action, Status)
+Security_Events (UserID, EventType, Details, Timestamp)
+Tech Stack:
+Backend: Node.js with Express
+Database: PostgreSQL/MongoDB
+OTP Service: Twilio
+Security: JWT, bcrypt, rate limiting
+
+
+Secure Data Handling: All user data (personal information, consultation records, learning progress, order history) must be encrypted both in transit (SSL/TLS for all communication) and at rest (database encryption). Implement "Privacy by Design" principles from the outset, adhering strictly to relevant international data protection laws (e.g., GDPR, CCPA) in addition to Indian regulations.
+Session Management: Implement secure session management to prevent unauthorized access and session hijacking.
+Detailed Audit Logging (for Legal Compliance):
+Log all critical actions by both Admin and Clients/Students:
+.
+Acceptance of legal policies (Terms of Service, Privacy Policy, Disclaimer, Return Policy) with timestamps and associated IP addresses and taking consent where applicable throughout the application. Disclaimer & any other legal document required for my global business.( Do this at the end of project, otherwise you have to edit it again and again.keep it in your memory). 
+Remember one point –Clients /students will not be able to cancel booking /purchashed courses/buy /ordered anything . Clients only can rebook appointment for online/offline consultation, when Astrologer will cancel any booked appointment from admin dashboard due to unavoidable reason. This point should be included in legal document of application.
+Remember –  Astrologer Arup Shastri will not allow return of  products/services/hard copy of horoscope . Disclaimer & any other legal document required for my global business.
+
+Consultation booking, start/end times, payment status.
+Course enrollment, lesson completion, quiz attempts.
+Product purchases, shipping status updates, return requests, and their processing.
+Any data modifications or deletions.
+Logs must be tamper-proof, time-stamped, and securely stored to provide a comprehensive audit trail for potential legal disputes in court.
+3. Client & Student Management (My Private Admin View)
+Client Database: A secure, central repository where I can add, view, edit, and manage individual client profiles.
+Client Profile Fields: Full Name-mandatory field, Date of Birth, Time of Birth (with AM/PM selector), Place of Birth (City, State/Province, Country - with intelligent timezone auto-detection and validation via geolocation API to facilitate my manual chart preparation). Email Address, Primary Phone Number (UID)-mandatory field, Current Phone Number, WhatsApp Number, and dedicated fields for my personal notes/remarks.
+Consultation History: Track all past consultations (online/offline), their type, duration, and status.
+Order History: Link to past product purchases.
+Document Upload( from admin dashboard ): Ability to upload and attach relevant documents (e.g., manually prepared horoscopes, custom reports) or notes to a client's profile.
+Student Database: A separate, secure section to manage student profiles.
+Student Profile Fields: Full Name, Email, Primary Phone (UID), Current Phone, Enrollment Date, Course Enrolled, Payment Status, Progress Tracking.
+Learning Progress: Track completed lessons, quizzes, and assignments for each student.
+Communication History: Log interactions related to their learning.
+Search & Filter: Robust search functionality for clients/students/orders by name, email, primary phone, service type, course, status, etc. from admin dashboard.
+Data Export: Option to export selected client or student data (e.g., as CSV or PDF) for backup or specific needs( from admin dashboard).
+4. Consultation Services (Online & Offline)
+Online Consultation Module (Global):
+Video Call (Jitsi Meet Integration): Secure, private one-on-one video calling functionality directly within the application, utilizing Jitsi Meet. 
+The integration should Allow me to initiate a Jitsi meeting directly from the client's booking.
+Enable Custom Logo Overlay on My Live Video: My pre-uploaded logo (from the admin dashboard) must be displayed on my live video feed during the Jitsi call, with default 30% transparency(% should be changed manually from admin dashboard). This functionality should be implemented on the client-side when my video stream is active. Apply 6 varities of stunning  3D animated video background( for astrologer side ) suitable for my Astrology business( You can concentrate on 9 vedic planets of moving & rotating on the space/ night stars/galaxy view etc. that you think best for me).Give an option to upload background image during video call. Astrologer will be able to change these backgrounds during live video call ( consultation)
+Enhance the colour & quality of video with professional look with giving suitable best looking animations and customize jitsimeet as much as possible with giving all possible necessary and possible features with my own branding ( with a default logo-I will provide that logo to you ,this logo should be manually changed by admin from dashboard ) and Name-“ Astrologer Arup Shastri ( Jai Guru )”. 
+Video quality should be automatically adjusted according to hosting bandwith /space ( both for students/clents and astrologer,but remember that default resolution for astrologer side will be 1080p i.e FHD, if hosting does not support FHD then automatically it will fall down but will give maximum resolution within 1080p ) so that video does not stop during live session. For live video call, add an option for students and clients to manually change video quality with all possible resolutions (240p,360P, 480P,720P,1080P) to use their internet data as per their will. Use advanced high quality sound with sufficient loudness for video call. Set Maximum resolution (1080P i.e FHD) from both sides ( clients/ students and Astrologer ).
+Online astrology class (Live video call) : When maximum no. of students ( default maximum limit 100) will be admitted for any astrology course, a new batch of same course ( already created by admin from dashboard )  will be automatically published and new students will join that 2nd batch. This way admin should create unlimited courses manually from dashboard and the courses should be published automatically on the basis of all possible criteria/condition i.e if maximum students (100) limit exceed for any running course, prescheduled (by admin) course ( 2nd batch) will be automatically published. Maximum limit of student should be changed manually by admin during each course creation.
+Automatic in-app notification to the admitted students before 1 hour from the pre-scheduled class starting time and once more when astrologer will start class. A  “Join class” button (for joining live class) will be shown ( only student side ) inside each astrological course prescheduled. Give an option to astrologer to create manually ( from dashboard ) astrological courses ( both online and offline courses ) with all possible required details (with price).
+
+Try to Provide a secure in-app meeting link for the client/online student to join without needing to download additional software.
+In-Chat: Real-time, encrypted text chat during consultations. This will be implemented using core web technologies (e.g., WebSockets) to avoid any third-party API costs. The system should have the option to save chat history ( this chat will be performed within app ).
+Phone Call (VOIP): VOIP-based audio call functionality within the application, utilizing Jitsi Meet's audio capabilities for app-to-app voice calls. This enables free real-time voice communication directly between me and the client within the app ( Try to use in-app voice call technique ).
+Important Note: This feature will not include Public Switched Telephone Network (PSTN) integration, meaning it will not connect to traditional external phone numbers. Calls will be exclusively app-to-app.
+Integrated Timer: A visible, accurate timer for all video, chat, and phone calls. Default consultation time duration of 30 minutes will be automatically set for chat, video call, and phone call, but this default can be edited manually by me from the admin dashboard for each booking or as a global setting. The timer will allow me to manage consultation duration, and automatically calculate session charges. Give an alert for both side (student/client and astrologer ) 5 minutes before the consultation ends. Try to display timer count on both end ( for video call, phone call, chat during live consultation ). Try to keep an option- client can add anyone ( single or multi persons upto 4 ) during live consultation ( video call, phone call, and chat ). Live chat consultation should have features of sending text , image ,video, voice of good quality from both side ). 
+Pre-consultation Setup: Ability for me to quickly pull up the client's profile, manually uploaded charts ( image/pdf file ) by clients  and hand typed notes before starting a call.
+Automatic in-app good thank you message notification to client after end of online consultation.
+Offline Consultation ( Chamber – Kolkata ): Option of online booking for taking appointment for offline consultation.
+Fees for online and offline consultation ( for both mode fees are same): option of Booking an appointment for offline consultation is only for Kolkata. In India, “ Over all prediction” of horoscope Fees-500/-( fees are same for offline consultation; & online consultation via video call, phone call and chat).This amount should be changed manually from admin dashboard
+#when any client will book a session , he or she can choose any one of 3 consultation option-video call, voice call or chat.
+# keep a only in-app chat option for consultation .because many clients prefer only chat . consultation via video call and voice call should have option of adding chat feature.
+Online consultation plans are given below: Astrologer’s available days and timings ( Monday to Sunday Around 10am-11.15am,12pm-1:30pm, 3pm-5pm,7pm-9pm.Only for Wednesday ,do not allow anyone to book an appointment between 3pm-5pm. 
+# Remember that video call, voice call and chat system should be fully protected. So apply all best possible feature to safe both sides specially for protecting astrologer from all legal issues.
+I have used word “Around” to give you liberty (  to increase or decrease starting and ending time by 15min for each time duration I have given )to make a best Booking plan (using booking calendar or any other that you think best for my business) according to my plans given below: 
+Quick Guidance: 299/- i.e 299 INR( Duration- 15min )
+Focused Analysis: 499/- i.e 499 INR ( Duration- 30min )
+In-Depth Analysis: 749/- i.e 749 INR ( Duration- 45min )
+Comprehensive Analysis: 999/- i.e 999 INR ( Duration- 1hour )
+
+Offline Consultation plans ( Chamber visit, booking through Online ) are given below:Astrologer’s available day and timing for offline consultation: only Wednesday ( 3pm to 6pm ) at Kolkata chamber.
+Focused Analysis: 499/- i.e 499 INR( Duration- 30min )
+In-Depth Analysis: 749/-i.e 749 INR ( Duration- 45min )
+Comprehensive Analysis: 999/- i.e 999 INR ( Duration- 1 hour )
+Consultation plans on specific topics basics:- clients will be able to book appointments for only online consultaion on the basis of specific topics like Job, Business, Income, Partnership, Education, Marriage, marital dischord, Break up, Dreams, success, Divorce, Love affairs, Litigation, Offspring, Brother-sister, House/land, Vehicle, father/Mother, Relatives, Bank balance, Friend, enemy, diseases, Fortune, Accident, small tour, Foreign travel, Share Market, Sudden gain, lottery, Religious acts, Debt, Happiness, misery, Master, Disciple, Servant, Talent, Devotion, Name & Fame, Accident, Death
+Consultation fees for each topic( consultation duration for each topic- 6 minutes) mentioned above is 100/- i.e 100 INR. Client will be able to select single or multi topics for only online consultation.Example- If client book for 3 topics ,then 18 min will be booked by client & 300 INR to be paid by client during booking.
+Keep an option of Language selection by client during booking for Online consultation. 
+For India ( My home country ) & other countries, creation of all possible astrological products ( with stunning pictures) with required products details with price , life horoscope ( both option- hard copy & soft copy )price & online consultation price will be automatically and dynamically set and visible on my site based on the prices of my best competitors (of that region /country) giving same service only except consultation fees of India ( In case of India, Consultancy fees for above mentioned plans will be automatically set and will be live on application ).Keep an option to manage these manually also ( edit ,single copy ,multiple copy option using one click,  single delete, multi delete with selection or country/ state /city/district wise fast deletion) from admin dashboard.
+Appointment Booking System: A calendar-based online booking system for getting consultation online and offline (my chamber sessions in Kolkata)
+Availability Management: I can set my available dates and time slots, mark specific times as unavailable, and define buffer periods between appointments. Time slots should automatically adjust based on the client's detected time zone for their convenience.
+Sharing Option: Users should allow to share our application , products & all services ( such as online ,offline consultancy, order for life horoscope - soft copy / hard copy )
+Client Booking Interface: A simple, web-based form where logged-in clients can select available slots, displayed in their local time.
+Automated Reminders: SMS/Email reminders to clients for upcoming appointments (using the integrated OTP/Transactional SMS & Email service).For Message you can use Twilio and for email sending you can use amazon free email plan right now. Remember well that all type of communication should be via in-app notifications or messages ( generating code) as much as possible. Use free Twilio and amazon free email as less as possible where these are mandatory- actually my intension is to run my web application with free /cheapest price.
+# you have to create a native app( replica of this web application) after successful deployment and production and testing.
+ Remember well -you have to create an automatic facebook ad campaign ( including all other major ad campaign platform like google, youtube etc. ) that I will be able to control from admin dashboard. I need a stunning best 3D animated landing page that will redirect users to my Native app and web application(that is being created ) with all type of sell and services buttons. Main moto of this landing page should be best promotional purpose for rapidly growth of my business globally. Give extra added plan that will be best for my business. Remember that you have to set all platforms' ad (that will be best for my business)and i will put money on wallet only.You have to plan best for good promotion and profit with cheapest investment on ad. You may change campaign type time to time when required. Suggest good plan so that I can control all these with my very minimum interaction/involvement.
+Begin web app completion-- not web app ,we need a native app of this current application.so you have first finish it after testing,then create a native app. But create the landing page now.Later connect the navigate button on landing page to native app.
+i do not know how you have plan for my native app. but you sholud remember that native app should be sync with web application, i.e real time change in native app and web application ( if anything is changed /delete/edit / added in one , that will be reflected on the other).
+You can create readymade all possible best stunning template-type web application that I can edit/upload photo from admin dashboard( particularly on homepage there should be an option to upload astrologer’s standard size photos and his master’s small single photo on the top.
+I told you to use Twilio plan for automatic OTP or other automatic messages messages and sending automatic emails ( use according to that you think best ). If automatic email s sending process can be done totally free of cost like using googleshett or any other best plan,you can use that plan ,otherwise i have to take free email plan of amazon that you proposed before. Always remember that try to use in-app notifications technique as much as possible for implementing my all features of my application try to use twilio's messages and amazon's emails as less as possible. Becuase my plan is to expense least for my business.
+You have finish my project with final testing ,deployment on live server via Github.and complete production.
+Horoscope & Report Delivery Options:
+Digital Reports: Ability to upload manually prepared professional, branded PDF horoscope reports or other documents to a client's profile. These reports are my own creation, not automatically generated by the app's internal logic. Logged-in clients can access their specific reports through their dashboard.
+Email Delivery: Option to email the PDF report or document directly to the client from the system (using the integrated transactional email service).
+Physical Delivery (Global Speed Post/Courier):
+Address Management: Securely store client mailing addresses, supporting international address formats.
+Shipping Workflow: A clear workflow for generating shipping labels/manifests and tracking IDs for international speed post/courier services. This might involve manual entry of tracking details initially, with an option to integrate with global shipping APIs later if needed (e.g., DHL, FedEx, UPS APIs, acknowledging potential costs, or international shipping aggregators like Easyship).
+Status Tracking: Ability for me to update the delivery status (e.g., "Printed," "Packaged," "Shipped," "Delivered," with tracking number).
+Payment Integration for Services:
+Secure payment gateway integration (e.g., Razorpay, Stripe, PayPal,) capable of processing international payments and managing multiple currencies.
+Advance Online Payment:
+Consultations: Clients must pay for online and offline consultations in advance at the time of booking. The booking will only be confirmed upon successful payment.
+Learning: Students must pay course fees in advance at the time of enrollment. Access to course materials will be granted upon successful payment. keep option of uploading class notes ( image /pdf/document file like word)on students’ profile by astrologer from admin dashboard.
+Tax-Inclusive Pricing: All service prices displayed will be the final, inclusive-of-tax amount. The system will not perform separate tax calculations for services; I will manually input the total price via the admin dashboard. Also add a manually add extra GST “X”% on base price(optional-this is used by admin when he need to pay GST after certain amount of income).Here “X” is a variable.
+
+Automatic price setting for foreign countries:-
+My web application will automatically collect pricing data from astrology websites in various countries.
+It will then analyze this data to determine an optimal price (very less compared to others or as you suggest for getting best profit) for your services.Finally, it will automatically update those prices on your website. 
+Invoice Generation: Automated generation of professional invoices for services rendered, supporting multiple currencies.
+Payment Tracking: Track payment status for each service (Paid, Pending, Refunded).
+Automated Notifications (Consultation-specific):
+Booking confirmation.
+Pre-consultation reminders (e.g., 24 hours, 1 hour before).
+Notification when a report is uploaded to their profile.
+Notification when a consultation is starting.
+5. Astrology Learning Module (Global)
+Course Management System:
+Create & Manage Courses: Ability for me to create, edit, and organize different astrology courses (e.g., "Beginner Astrology," "Vedic Astrology Fundamentals," "Predictive Techniques").
+Lesson Management: Upload and organize course content (text, images, PDFs, pre-recorded videos, audio lectures). Integrate video hosting securely (e.g., via Vimeo/YouTube private embeds or a custom solution for self-hosting).
+Note: During course creation teaching language ( the language by which astrologer will teach )field should be there 
+Quiz & Assignment Features: Create quizzes (multiple choice, short answer) and assignments for students to test their knowledge, with automated grading options where possible, and manual review for complex assignments.
+Resource Library: Upload supplementary materials (e.g., ephemeris tables, PDFs of texts, practice charts).
+Enrollment Process (Fully Automated):
+Course Listing: A private section where I can list available courses with descriptions, syllabi, and pricing, displayed in the user's local currency.
+Tax-Inclusive Pricing: All course prices displayed will be the final, inclusive-of-tax amount. The system will not perform separate tax calculations for courses; I will manually input the total price via the admin dashboard.
+Online Enrollment Form: A user-friendly enrollment form for logged-in students to register for courses.
+Advance Payment: Students must pay course fees in advance at the time of enrollment. Access to course materials will be granted upon successful payment.
+Payment Integration: Seamless payment processing for course fees via integrated global payment gateways.
+Automated Access: Upon successful enrollment and payment, automatically grant logged-in students access to their enrolled course materials.
+Learning Delivery Options:
+Online Astrology Learning: Logged-in students can access course content directly through the web application, track their progress, participate in quizzes, and submit assignments from anywhere globally.
+Offline Astrology Learning (Chamber - Kolkata): This section will display course name with possible course details with price ( these will be set manually from admin dashboard)and class-address. This section will also inform that since offline learning seats are limited, so students will be selected based on their personal details [ students have to produce their personal details with phone no.,whatsapp, email ID ,upload aadhar , birth details ( Date of birth, Birth time, Birth place -Give nearest city/town/rail station name ) ] followed by an interview.
+Home Tuition at student’s place ( for learning astrology): This includes two options- one to one learning and group learning.This section will display course name with possible course details with price ( these will be set manually from admin dashboard). This section will also inform that since Home tuition seats are very limited, so students will be selected based on their personal details [ students have to produce their personal details with name,phone no., whatsapp, email ID, upload aadhar, birth details ( Date of birth, Birth time, Birth place -Give nearest city/town, rail station name)  with tuition address] followed by an interview. This is for one to one class. For group learning, a student can add multiple students in this section ( while applying or later ) via their login in webapp with producing same details.
+Student Communication: Integrated private messaging system for admitted students to ask questions directly to me (no public forums or student-to-student interaction).
+Automated Notifications (Student-specific):
+Welcome message upon course enrollment.
+Notifications for new lessons unlocked.
+Quiz/assignment result notifications.
+Course completion notifications.
+Automatic Reminders for upcoming live classes (notification within app).
+6. E-commerce & Product Management (Global)
+Product Catalog:
+Display various astrological remedy products (e.g., gemstones, yantras, talismans, books, personalized charm kits).
+Organize products into categories for easy Browse.
+Visually appealing product listings with high-quality images.
+Product Details: Each product page must include:
+Product Name
+Description (rich text editor for formatting)
+Tax-Inclusive Pricing: initially all product prices displayed will be the final, inclusive-of-tax amount. The system will not perform separate tax calculations for products;
+Give an option for future use:Though my application will automatically create products with product detail(with price) I will manually input the total price via the admin dashboard. Give an option to add “x”% GST on products and service prices manually from admin dashboard. “X” is a variable. Keep an option to add manually “y”% increase on all current products and services price ( this “Y” value could be fixed for all products & services and in addition keep all other option where value of  “Y”  could be changed products and services category wise. You should keep also an option to manually add “Y” value for each service and product)
+Remember : all astrological products ( including Life horoscopes-soft copy or hard copy  )and services {consultancy and learning astrology(astrology class)} with their required details & pricings will be automatically created best on competitors’ price in the market of each country ( persons of each country will see same product with their own currency).Pricing should be automatically set such a way so that My Business grows very fast and conquer over the world within few years. But all these should be edited ,delete, create (new )manually also from admin dashboard.
+Multiple Images/Gallery
+SKU/Product Code
+Inventory/Stock Level Management
+Shipping Weight/Dimensions (for calculation)
+Related Products/Suggestions (manually set by me)
+Manual Product Creation/Editing: From the admin dashboard, I must have full control to:
+Manually Create New Products & services : Add all products and services details from scratch, including the final tax-inclusive price( give all possible copy, edit delete options for fast work and saving time)
+Manage Categories: Create, edit, and delete product categories.
+Shopping Cart & Checkout:
+Standard e-commerce shopping cart functionality.
+Secure and intuitive checkout process for logged-in users, supporting international addresses and billing details.
+Payment Integration with chosen global payment gateways for product purchases.
+# CHATBOT FOR GENERAL ENQUIRY: Have you added a AI chatbot web application (customer support agent ) that will give answer automatically( to the clients'/students' questions ) based on 1) the data pre-loaded ( data will be uploaded by you after finishing project i.e just before application is hosted on my LIVE server as you will know total features and about our services) on it and 2) premade frequently asked questions (You will create all possible questions & corresponding answers regarding our service )? Keep a manual Reply( human) option if AI chat bot becomes failed to answer for a question.(In this case chatbot will send message to students/clients-"Our customer care executives are busy now. Please wait. We shall contact you very soon"--something like that). Uploaded data ,frequently asked questions and its answers should be automatically updated when anything is changed ,removed or added to my application. If you have not created this features yet, please do it with a best modern but user-friendly way ( the best way you can do maintaining consistently with my 3d application) that will be looking stunning and unique .
+Shipping & Fulfillment:
+Integrated Shipping Provider (Best but Budget-Friendly Recommendation for India & Global):
+Integrate with a reliable and budget-friendly shipping aggregator/provider in India that also offers international shipping services (e.g., Shiprocket, Delhivery (for international as well), or specific international couriers like DHL, FedEx directly if budget allows, or global shipping aggregators like Easyship, ShipStation which integrate with multiple carriers). The system should enable:
+Automated Pickup Scheduling: Request pick-up of packed products from my location.
+Shipping Label Generation: Generate shipping labels and customs declarations with tracking numbers directly from the dashboard for both domestic and international shipments.
+Automated Tracking: Real-time tracking updates for customers (via their logged-in dashboard, email/SMS) and for me, supporting international tracking numbers.
+Global Delivery: Coverage across various countries and pin codes.
+Manual Shipping Option:
+Ability to process orders using my own chosen courier service (outside the integrated provider) for both domestic and international shipments. This involves:
+Manually entering the courier name.
+Manually entering the tracking ID.
+Manually updating shipping status.
+Customers will receive tracking information via email/SMS for these orders as well.
+Shipping Cost Calculation: Calculation of shipping costs based on product weight, dimensions, destination pincode/country, and selected shipping method (integrated provider's rates or my manually defined rates). This must account for international shipping complexities (customs, duties if applicable).
+Order Management:
+View and manage all customer orders from the admin dashboard.
+Update order status (e.g., "Pending," "Processing," "Shipped," "Delivered," "Cancelled," "Refunded").
+View customer and product details for each order.
+Product Return, Replacement, and Exchange Management:
+Return Request Initiation: A clear process for logged-in customers to initiate a return/replacement/exchange request through their dashboard, stating the reason.
+Return/Replacement Workflow: An admin panel workflow for me to manage return requests:
+Review request details (reason for return, product condition).
+Approve/Reject requests.
+Initiate return pickup via the integrated shipping provider (reverse logistics) or provide instructions for customer self-shipment (for manual returns), applicable for both domestic and international returns.
+Track the return shipment.
+Inspect returned product upon receipt.
+Process refunds or initiate product replacement/exchange.
+Status Updates: Automated notifications to customers (via dashboard, email, SMS) about the status of their return/replacement/exchange (e.g., "Return Approved," "Product Picked Up," "Refund Processed," "Replacement Shipped").
+Refund Processing: Integration with payment gateway for processing refunds to the original payment method, potentially across currencies.
+Inventory Adjustment: Automatic adjustment of inventory levels for returned or exchanged products.
+Automated Notifications (Order/Product-specific):
+Order confirmation and summary.
+Shipping confirmation with tracking number.
+Delivery confirmation.
+Return request received and its status updates.
+Refund/replacement processed notifications.
+7. User-Friendly Admin Dashboard (My Control Center)
+Centralized Overview: A personalized, intuitive dashboard giving me a quick overview of:
+Upcoming online/offline consultations.
+New client/student registrations.
+Pending payments (for services and products).
+Recent product orders and their statuses (including new return/exchange requests).
+Active online sessions (video/chat/phone).
+Course progress summaries.
+Low stock alerts for products.
+Manual Control & Customization:
+Dashboard Widgets: Customizable widgets/sections on the dashboard so I can arrange information according to my preferences (drag-and-drop customization).
+Settings Panel: Comprehensive settings panel to customize:
+My availability for all services (online, offline, learning) with global time zone management.
+Service pricing and duration, supporting multiple currencies. All prices (products and services) are editable as tax-inclusive final amounts.
+Product pricing, international shipping rates, and tax settings.
+Automated email/SMS templates (for booking confirmations, reminders, report delivery, order confirmations, shipping updates, return/replacement status) using the integrated OTP/Transactional SMS & Email service.
+Branding elements (main logo, color scheme for reports, product pages, and client-facing interfaces).
+Live Video Overlay Logo Management: Dedicated section to upload my logo for the live video overlay. This section will allow me to upload an image file (e.g., PNG with transparency), preview it, and set its position (e.g., top-left, bottom-right) and the 30% transparency level.
+Payment gateway configurations, including preferred base currency.
+Integration settings for the chosen shipping provider.
+OTP service configurations.
+Default Consultation Duration Setting: Option to set or modify the default 30-minute consultation time for chat, video, and phone calls.
+Automated Message/Notification Configuration: A dedicated section to manage and configure all types of automated messages/notifications that are sent to client/student profiles/dashboards, or via transactional email/SMS. This includes:
+Enabling/disabling specific message types.
+Editing the content/templates of these messages.
+Setting triggers for when messages are sent.
+Content Management: Easy access to update my astrological interpretations (for my internal notes), course materials, product details, and all legal disclaimers/policies.
+Reporting & Analytics:
+Basic reports on service usage, client growth, course enrollments, product sales, and revenue, possibly segmented by region/country.
+Consultation duration logs.
+Order fulfillment statistics, including exchange rates.
+User activity logs (login, sign-up, consent acceptance).
+8. User Interface (UI) & User Experience (UX)
+Modern & Attractive Design: A sleek, minimalist, and professional design that reflects a modern astrological practice. 
+Animated Visualizations:
+Subtle and elegant animations for page transitions, button interactions, and data loading indicators to enhance user experience.
+Intuitive Navigation: Clear, logical, and easy-to-understand navigation throughout the application for both admin and logged-in client/student interfaces.
+Responsive Design: The application must be fully responsive, providing an optimal experience on desktops, laptops, tablets, and mobile phones without sacrificing functionality or aesthetics.
+Accessibility: Ensure basic accessibility standards are met for ease of use.
+Multi-currency Display: Clearly show prices in the user's local currency based on their IP address or selection.
+9. Legal & Compliance Features (Strong & Enforced for Global Service)
+Mandatory Checkbox Consent at Signup/Purchase: During client/student signup and any purchase/booking process, clear, prominent checkboxes must be presented for:
+"I agree to the Terms of Service" (linked text).
+"I agree to the Privacy Policy" (linked text).
+"I acknowledge and accept the Disclaimer" (linked text).
+"I have read and understood the Product Return and Exchange Policy" (linked text).
+Users cannot proceed with signup/purchase/booking without checking these boxes. Consent details (timestamp, IP address) must be logged for legal audit trails. 
+Important: Keep an easy legal safe side for login students/clients whose age under 18.
+In-App Legal Consents During Service: For specific services or data usage within the application (e.g., before initiating a video call, before a booking is finalized, or if new data types are requested), additional, context-specific checkboxes or explicit consent dialogues will appear and must be agreed upon by the client. These must also be logged as part of the audit trail.
+Customizable Legal Pages: Prominent sections for my customizable Legal Disclaimer, Terms of Service, Privacy Policy, Product Return and Exchange Policy, and Refund Policy. These pages must be easily editable by me from the admin dashboard and publicly accessible via dedicated links on www.jaiguruastroremedy.com.
+Data Minimization: Design the application to collect only the absolutely necessary personal and consultation-related data. Birth details are collected for my manual reference, not for automated calculation by the app.
+Data Deletion Protocol: A clear and automated process for me to securely delete client/student data upon request or after a defined retention period, in full compliance with all relevant international data protection laws (e.g., GDPR, CCPA, local Indian laws).
+Audit Trails: Detailed audit logs for critical actions related to data collection, access, modification, and deletion to demonstrate compliance, as described in section 2.
+Payment Security: Adhere to PCI DSS compliance standards if processing credit card data directly (though using a third-party gateway will offload much of this responsibility).
+10. "Me-Only" Service Assurance (Critical Requirement)
+Client/Student Accounts for Direct Interaction: Clients and students will have their own secure login accounts to access their profile, bookings, course materials, past orders, and communication with me.
+No Multi-Astrologer Support: The system is designed and hard-coded for a single astrologer (me) and will explicitly not include any features for managing multiple astrologers, a marketplace, or peer-to-peer astrological services. My brand and services are the sole focus.
+Direct Communication Only: All communication channels (chat, video, phone, email, SMS) facilitate direct interaction between me and my clients/students only. There are no public forums or client-to-client interaction features.
+Add few features --- New Authority System: ExpertProfile.jsx: Interactive guru profile with credentials MediaFeatures.jsx: Press/feature showcase ClientTestimonials3D.jsx: Verified success stories VedicScholarship.jsx: Research publications Engagement Suite: LiveChat.jsx: Pre-consultation Q&A ConsultationInsider.jsx: Behind-the-scenes content DharmicDebates.jsx: Community discussion forum Consultation Tools: CosmicNotepad.jsx: Interactive session workspace SessionPlanner.jsx: Pre-consultation wizard New ConsultationContext for session data Feedback System: PostSessionSurvey.jsx: Integrated with Facebook ad comments Remedy Workflow: Enhanced PrescriptionBuilder.jsx for manual creation Dedicated prescription detail pages Server endpoints for prescription management The structure maintains all existing functionality while focusing on: Guru authority enhancement Client engagement tools Manual consultation workflow Remedy prescription system Feedback-driven marketing.
+You have to plan how many menu  buttons should be created as per my scope of work and you have to create all required menus from the beginning on Home page. Because later you will implement one plan and then will change code of home page again and again for inserting only required menus- it will be disgusting and time wasting. You have to remember well that you have to work such a way so that i can finish my project as fast as possible. So always give me suggestions and correct codes such a way so that after checking one part , that part will not be required to change later during development since this is big project. So before implementing any part, read the project very well. You have to add the all required links of legal matters ( as you recommend best for me, like Terms of service, privacy policy, disclaimer, Return policy etc. ) as per my scope of work. These legal matters can be added during sign up process or and middle of the application ( where applicable) to keep me legally strongly secured. Remember that this is a global application.
+create a suitable  best your recommended plan to use and run my application safely with only free plan( since i do not want to buy paid plan of Mongodb ) of Mongodb  and keep auto delete option of unnecessary data for users time to time.

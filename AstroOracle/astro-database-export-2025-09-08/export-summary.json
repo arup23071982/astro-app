@@ -1,0 +1,119 @@
+{
+  "projectName": "Jai Guru Astro Remedy",
+  "description": "Complete astrology business platform database export",
+  "exportDate": "2025-09-08T11:33:56.614Z",
+  "totalTables": 22,
+  "exportedTables": [
+    {
+      "name": "auth_sessions",
+      "records": 0,
+      "file": "auth_sessions.json"
+    },
+    {
+      "name": "consultations",
+      "records": 0,
+      "file": "consultations.json"
+    },
+    {
+      "name": "course_enrollments",
+      "records": 0,
+      "file": "course_enrollments.json"
+    },
+    {
+      "name": "courses",
+      "records": 0,
+      "file": "courses.json"
+    },
+    {
+      "name": "home_tuition_applications",
+      "records": 0,
+      "file": "home_tuition_applications.json"
+    },
+    {
+      "name": "legal_agreements",
+      "records": 0,
+      "file": "legal_agreements.json"
+    },
+    {
+      "name": "faqs",
+      "records": 0,
+      "file": "faqs.json"
+    },
+    {
+      "name": "home_tuition_courses",
+      "records": 0,
+      "file": "home_tuition_courses.json"
+    },
+    {
+      "name": "audit_logs",
+      "records": 0,
+      "file": "audit_logs.json"
+    },
+    {
+      "name": "notifications",
+      "records": 0,
+      "file": "notifications.json"
+    },
+    {
+      "name": "orders",
+      "records": 0,
+      "file": "orders.json"
+    },
+    {
+      "name": "otp_verifications",
+      "records": 0,
+      "file": "otp_verifications.json"
+    },
+    {
+      "name": "mobile_number_changes",
+      "records": 0,
+      "file": "mobile_number_changes.json"
+    },
+    {
+      "name": "products",
+      "records": 0,
+      "file": "products.json"
+    },
+    {
+      "name": "student_conversations",
+      "records": 0,
+      "file": "student_conversations.json"
+    },
+    {
+      "name": "student_messages",
+      "records": 0,
+      "file": "student_messages.json"
+    },
+    {
+      "name": "support_chats",
+      "records": 0,
+      "file": "support_chats.json"
+    },
+    {
+      "name": "user_contacts",
+      "records": 0,
+      "file": "user_contacts.json"
+    },
+    {
+      "name": "chat_messages",
+      "records": 0,
+      "file": "chat_messages.json"
+    },
+    {
+      "name": "users",
+      "records": 0,
+      "file": "users.json"
+    },
+    {
+      "name": "security_events",
+      "records": 0,
+      "file": "security_events.json"
+    },
+    {
+      "name": "support_chat_messages",
+      "records": 0,
+      "file": "support_chat_messages.json"
+    }
+  ],
+  "totalRecords": 0
+}

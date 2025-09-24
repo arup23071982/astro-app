@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Background colors */
+  --background: rgba(8, 5, 13, 0.01);
+  --foreground: hsl(300, 20%, 99%);
+  --card: rgba(255, 255, 255, 0.02);
+  --card-foreground: hsl(300, 20%, 99%);
+  --popover: rgba(255, 255, 255, 0.02);
+  --popover-foreground: hsl(300, 20%, 99%);
+  
+  /* Primary theme colors */
+  --primary: hsl(42, 92%, 56%);
+  --primary-foreground: hsl(240, 100%, 4%);
+  --secondary: hsl(195, 100%, 50%);
+  --secondary-foreground: hsl(240, 100%, 4%);
+  --muted: rgba(255, 255, 255, 0.05);
+  --muted-foreground: hsl(300, 10%, 70%);
+  --accent: rgba(255, 193, 7, 0.08);
+  --accent-foreground: hsl(240, 100%, 4%);
+  
+  /* Utility colors */
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(300, 20%, 99%);
+  --border: rgba(255, 193, 7, 0.1);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: hsl(42, 92%, 56%);
+  
+  /* Chart colors */
+  --chart-1: hsl(42, 92%, 56%);
+  --chart-2: hsl(195, 100%, 50%);
+  --chart-3: hsl(280, 100%, 70%);
+  --chart-4: hsl(147, 78%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  
+  /* Sidebar colors */
+  --sidebar: rgba(255, 255, 255, 0.02);
+  --sidebar-foreground: hsl(300, 20%, 99%);
+  --sidebar-primary: hsl(42, 92%, 56%);
+  --sidebar-primary-foreground: hsl(240, 100%, 4%);
+  --sidebar-accent: hsl(42, 92%, 56%);
+  --sidebar-accent-foreground: hsl(240, 100%, 4%);
+  --sidebar-border: rgba(255, 193, 7, 0.08);
+  --sidebar-ring: hsl(42, 92%, 56%);
+  
+  /* Font families */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  
+  /* Border radius */
+  --radius: 12px;
+  
+  /* Shadows */
+  --shadow-2xs: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1);
+  --shadow-xs: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1);
+  --shadow-sm: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1), 0px 1px 2px -1px hsl(42, 92%, 56%, 0.1);
+  --shadow: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1), 0px 1px 2px -1px hsl(42, 92%, 56%, 0.1);
+  --shadow-md: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1), 0px 2px 4px -1px hsl(42, 92%, 56%, 0.1);
+  --shadow-lg: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1), 0px 4px 6px -1px hsl(42, 92%, 56%, 0.1);
+  --shadow-xl: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1), 0px 8px 10px -1px hsl(42, 92%, 56%, 0.1);
+  --shadow-2xl: 0px 2px 0px 0px hsl(42, 92%, 56%, 0.1);
+  
+  /* Spacing and typography */
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: linear-gradient(135deg, #05050f 0%, #0c0618 20%, #14081f 40%, #1a0b2e 60%, #0f0820 80%, #08050d 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism styles */
+.glass {
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(30px) saturate(1.8);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, 
+    rgba(255, 193, 7, 0.04) 0%, 
+    rgba(255, 255, 255, 0.01) 50%, 
+    rgba(255, 193, 7, 0.02) 100%);
+  backdrop-filter: blur(30px) saturate(2.0);
+  border: 1px solid;
+  border-image: linear-gradient(135deg, 
+    rgba(255, 193, 7, 0.12) 0%, 
+    rgba(255, 255, 255, 0.06) 50%, 
+    rgba(255, 193, 7, 0.08) 100%) 1;
+  box-shadow: 
+    0 8px 32px rgba(255, 193, 7, 0.04),
+    0 0 20px rgba(255, 193, 7, 0.02),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Neon glow effects */
+.neon-text {
+  -webkit-text-stroke: 1.5px rgba(255, 193, 7, 0.4);
+  text-shadow: 
+    0 0 2px hsl(42, 100%, 85%),
+    0 0 5px hsl(42, 100%, 70%),
+    0 0 10px hsl(42, 92%, 56%),
+    0 0 15px hsl(42, 92%, 56%),
+    0 0 20px hsl(42, 100%, 60%),
+    0 0 30px hsl(42, 95%, 55%),
+    0 0 40px hsl(42, 90%, 50%),
+    0 0 50px hsl(42, 85%, 45%),
+    inset 0 0 3px rgba(255, 255, 255, 0.3);
+  filter: brightness(1.4) saturate(1.3) contrast(1.2) drop-shadow(0 0 5px rgba(255, 193, 7, 1.0)) drop-shadow(0 0 15px rgba(255, 193, 7, 0.6));
+  color: hsl(42, 100%, 75%) !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.neon-border {
+  box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+}
+
+.neon-button {
+  background: linear-gradient(45deg, hsl(42, 92%, 56%), hsl(195, 100%, 50%));
+  box-shadow: 0 0 20px hsl(42, 92%, 56%), 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px hsl(42, 92%, 56%), 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation styles */
+.nav-glass {
+  background: rgba(26, 11, 46, 0.2);
+  backdrop-filter: blur(30px) saturate(1.8);
+  border-bottom: 1px solid rgba(255, 193, 7, 0.06);
+}
+
+/* Form styling */
+.form-input {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 193, 7, 0.08);
+  backdrop-filter: blur(20px) saturate(1.5);
+  color: hsl(300, 20%, 99%);
+}
+
+/* Hide native date/time input icons to show our custom ones */
+.form-input::-webkit-calendar-picker-indicator,
+.form-input::-webkit-inner-spin-button,
+.form-input::-webkit-datetime-edit-fields-wrapper {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-input:focus {
+  border-color: hsl(42, 92%, 56%);
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: hsl(300, 10%, 70%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 193, 7, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, hsl(42, 92%, 56%), hsl(195, 100%, 50%));
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-15px) translateX(5px); }
+  50% { transform: translateY(-30px) translateX(0px); }
+  75% { transform: translateY(-15px) translateX(-5px); }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.8; filter: brightness(1); }
+  50% { opacity: 1; filter: brightness(1.3); }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes comet {
+  0% { 
+    transform: translateX(-100vw) translateY(-100vh) rotate(-45deg);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { 
+    transform: translateX(100vw) translateY(100vh) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes nebula-drift {
+  0%, 100% { transform: translateX(0) translateY(0) scale(1); }
+  25% { transform: translateX(20px) translateY(-10px) scale(1.1); }
+  50% { transform: translateX(-10px) translateY(15px) scale(0.9); }
+  75% { transform: translateX(15px) translateY(20px) scale(1.05); }
+}
+
+@keyframes pulse-neon {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(42, 92%, 56%);
+  }
+  50% { 
+    box-shadow: 0 0 30px hsl(42, 92%, 56%), 0 0 40px hsl(195, 100%, 50%);
+  }
+}
+
+/* Utility classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-pulse-neon {
+  animation: pulse-neon 2s ease-in-out infinite;
+}
+
+.animate-comet {
+  animation: comet 8s linear infinite;
+}
+
+.animate-nebula-drift {
+  animation: nebula-drift 15s ease-in-out infinite;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Cosmic background elements */
+.cosmic-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  animation: orbit 20s linear infinite;
+}
+
+.comet {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: linear-gradient(45deg, #00f5ff, #ffffff);
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+  
+  button {
+    @apply transition-all duration-200;
+  }
+  
+  input, textarea, select {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(45deg, hsl(42, 92%, 56%), hsl(195, 100%, 50%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(45deg, hsl(42, 92%, 56%), hsl(195, 100%, 50%)) border-box;
+  }
+}

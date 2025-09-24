@@ -1,0 +1,544 @@
+.
+├── .local
+│   └── state
+│       └── replit
+│           └── agent
+│               ├── .agent_state_1a2ffe648e12bd720f7499838040b82614c1d344.bin
+│               ├── .agent_state_1a4dcd4824cf3f597fd1a9bae1ba8623cdccc137.bin
+│               ├── .agent_state_1b1f6f44187aa11b56c59d2563fdf0fb85e3d4eb.bin
+│               ├── .agent_state_20a2e1f379646fe3740b65a77a09b6e3b7fd467a.bin
+│               ├── .agent_state_21cacb9ae7d8e51cf18cd214abd2d8bd8c7986df.bin
+│               ├── .agent_state_2300edcb3ce3478b6d21830f485fa8931b3ba3c9.bin
+│               ├── .agent_state_267f093f71bcd42d057ea1e246a1b58a31aec86d.bin
+│               ├── .agent_state_2a9df145b7df1db63798ad29584ba2599e5c6bb3.bin
+│               ├── .agent_state_2ab79c6d1e68784f69e31657f48b9c9343c419f3.bin
+│               ├── .agent_state_2ae87075c1f88df28f53f7f8b7881db63d5c0a15.bin
+│               ├── .agent_state_2b22d0144e5fb4a7ca499a14ce8f3e8fc1bcbeae.bin
+│               ├── .agent_state_2c82624954ea569c9a7762b48d11119e1fa13e29.bin
+│               ├── .agent_state_322394ef9b4f5608a8d2472f765cb39fb46b12e5.bin
+│               ├── .agent_state_3227954e4ea1b06a9e04c6413a14e0e0642469a5.bin
+│               ├── .agent_state_3453524c35473409a1dd9b2dc2f26a8d7aee9b11.bin
+│               ├── .agent_state_3a2be60dc2164661822d4c102b97b4d78693f906.bin
+│               ├── .agent_state_3bea53af418651d2bc530b2bf5019931c6d8cc15.bin
+│               ├── .agent_state_451c5de6f255404fa05514434fac168e268ef1e5.bin
+│               ├── .agent_state_473298360d732780668d126103b627762e135f44.bin
+│               ├── .agent_state_47723c2de7c1c1f1079e7382004245c873654ae8.bin
+│               ├── .agent_state_4890a046fbbe5fba1fc5972e46bddd4f4173b6e2.bin
+│               ├── .agent_state_5230dea506479703cbd972e845462dd400b1135f.bin
+│               ├── .agent_state_52bf20077a909fe9e3488caf4633cf6654a50c62.bin
+│               ├── .agent_state_531ce4a06c974f43683921a01e24979afae9e0f7.bin
+│               ├── .agent_state_5382936ade2d1ceb1c50af627243f9fde19b2eca.bin
+│               ├── .agent_state_5a4b7b217e4d51fd8aeaf75cf29cf752815f4e95.bin
+│               ├── .agent_state_6335ccd65db2ce179cd1d69cfaf39736bbb25c0b.bin
+│               ├── .agent_state_69eb6ec47d9e82b85144dfc4b4fd1df311c43921.bin
+│               ├── .agent_state_6da843e093a6dad30179a7b0ce9b509e5d1bc655.bin
+│               ├── .agent_state_6e84022237e7046b7fd7c19b0cf2f876884600e7.bin
+│               ├── .agent_state_78c25f3a4707b6c4ef22cb21e117fa4ad286dbd1.bin
+│               ├── .agent_state_7b54e319b764bc791c4b419aa199992a1ba615c9.bin
+│               ├── .agent_state_7c4cc300393ed05021a4f94a70dd65c62296e005.bin
+│               ├── .agent_state_7ec651bdc072d8f4026455654b11871e80bb4e2f.bin
+│               ├── .agent_state_7f4ca5d1c40c556ce231b2c65c1685b83ad6e360.bin
+│               ├── .agent_state_7fd14dfcb9804211315ae256f496101900370f12.bin
+│               ├── .agent_state_80ec939ff3705c46369e3f827c446d2f6e787de5.bin
+│               ├── .agent_state_82548f13bff8b20da7d086de4799b3ffe98ba1bb.bin
+│               ├── .agent_state_83d68868a6eda4066c6b2423da6a3742b010e046.bin
+│               ├── .agent_state_89ce2175adab48fad8aab7ff29446eeb0a97fcaa.bin
+│               ├── .agent_state_8c311669ee0bf424145234442333bd5c1dcb26d7.bin
+│               ├── .agent_state_8dbc9a55b180d54ad4cfd4573198f168c80f8790.bin
+│               ├── .agent_state_91ef68d5496f87d5be19c3f0ec7c765c88c86b55.bin
+│               ├── .agent_state_9242b300882207a4e5db623fe3399a6345912b9d.bin
+│               ├── .agent_state_934ee1e575d5ebc22f920d0b1291a0a7f37862fc.bin
+│               ├── .agent_state_9aba8cc51bf51024b59097c7f66246c00b6e136f.bin
+│               ├── .agent_state_9c78814f385bf0cf2604308f34f9705b67d078c6.bin
+│               ├── .agent_state_9d63faf11056a93bc2d712595efd57d987fc1f8a.bin
+│               ├── .agent_state_a134326e2abfe9e38593457e0dad32ce55abdc77.bin
+│               ├── .agent_state_a50941dae691ec187ad71a7fb3ec48a254401937.bin
+│               ├── .agent_state_a716cebb312c41cc164adb89eb4d29e407e1dd4d.bin
+│               ├── .agent_state_a7fecbc4439c6fdb47c303ace9baa03551fec3ce.bin
+│               ├── .agent_state_ac6c616e71291c8970e3d26df5894a7e8fda31d8.bin
+│               ├── .agent_state_aeee58c75b012ae7a32d5294e4547b0d08dded85.bin
+│               ├── .agent_state_b155acdc839f7890868841ae3587ddcb04b71357.bin
+│               ├── .agent_state_b409348260c9255d745355f89ebf798c67bf0901.bin
+│               ├── .agent_state_b874d42774f45e88320e55f1ecd0f6c4634528c4.bin
+│               ├── .agent_state_bc2141258b8b2fea680d1168448c0333fe28b348.bin
+│               ├── .agent_state_bcb1b651da0baf9fabbdca0ce80f3b90ab15aaba.bin
+│               ├── .agent_state_c3d748d1907b1d8924e60be91360b8c12be9a963.bin
+│               ├── .agent_state_cc3ecd3cdc2b3624162c10cc26df3bbb2724aa37.bin
+│               ├── .agent_state_cfee0e63809503be6ef326acc9ea07ae77526a23.bin
+│               ├── .agent_state_d073f0450dcf92b6a99dd9c97a3cd9a908548bca.bin
+│               ├── .agent_state_d35bdb101431147409bd5af4badb530cfdb640f7.bin
+│               ├── .agent_state_d376336958f622e12b14ca101fe35c7498e81f92.bin
+│               ├── .agent_state_d5723840f87274aca7a2e0f9d185f8bd05e5f4a3.bin
+│               ├── .agent_state_d6fbddd6494a2a29b84657673d642fc41a69e721.bin
+│               ├── .agent_state_d76ca799ba6e73304a932fb0985a0c4444be3eb0.bin
+│               ├── .agent_state_dc8e5c6f649005aa63a9b537e60d022d74eaaf83.bin
+│               ├── .agent_state_e3a26485a049b226814f89d2df254e2032dbf0aa.bin
+│               ├── .agent_state_f3e7d38e1f78ea047501ac533616e09945eeca04.bin
+│               ├── .agent_state_f83a7eb5c0f4e585c21c8b485503f9e3f2b34f06.bin
+│               ├── .agent_state_f8c06030dc090fac6fd0777eb0bdcc3926213212.bin
+│               ├── .agent_state_f8e196feac2d975e44af024e11accc0d8aae6039.bin
+│               ├── .agent_state_fda82c395b6e8ce7ef3c721e0222974aac8dbea6.bin
+│               ├── .agent_state_main.bin
+│               ├── .latest.json
+│               ├── filesystem
+│               │   └── filesystem_state.json
+│               └── repl_state.bin
+├── .replit
+├── AstroOracle
+│   ├── .config
+│   │   └── pulse
+│   │       └── cookie
+│   ├── .gitignore
+│   ├── .local
+│   │   └── state
+│   │       └── replit
+│   │           └── agent
+│   │               ├── .agent_state_011cb91f258556197c8d66f4dd267c5679a2d9b8.bin
+│   │               ├── .agent_state_052455a04d74acc2de1018ef37104fc97f41414f.bin
+│   │               ├── .agent_state_053b40a448c4b931f19d69f573a675a0da3057ea.bin
+│   │               ├── .agent_state_0733e9039bcefdc267686213227992fd059fb066.bin
+│   │               ├── .agent_state_0b51bfee08f6070c62b90430e933acb7a18dcee5.bin
+│   │               ├── .agent_state_0cb50dc150597077850de08a7484b8062e534383.bin
+│   │               ├── .agent_state_0ecd49a8bfe3cde40fd9d292b21653a64a2c7fdf.bin
+│   │               ├── .agent_state_12a5928786a3177136e883a48e9ea402d6f972c9.bin
+│   │               ├── .agent_state_13f2ee0edd24046aa7c9450597b568b2e6881058.bin
+│   │               ├── .agent_state_148fb35896e34eace8530d6faa0c7edf6fc841c7.bin
+│   │               ├── .agent_state_15e1d14b694f1b6f01c1b1f37e1f2f45915c77bb.bin
+│   │               ├── .agent_state_16279232a7134acd4939dcc9170edf54f90aee3a.bin
+│   │               ├── .agent_state_19eb40a64ae17dd9c51fd3c1ab565348bf901685.bin
+│   │               ├── .agent_state_1a00cce7fc259cdab1e2c42b08667c0b22948b24.bin
+│   │               ├── .agent_state_1a5eb860074a18fafbf54ab9d99f29d8efc32fce.bin
+│   │               ├── .agent_state_1a93a812a4a4e18d0acaac0755717b9524c6212a.bin
+│   │               ├── .agent_state_1d4b1e86026e32b412e1bc81862407c441c53ef6.bin
+│   │               ├── .agent_state_20679bb7fc2d4aac1cc47815d65c71414c5195eb.bin
+│   │               ├── .agent_state_20bdd182c7cb8bdca229041d9a1bd7065bba6a63.bin
+│   │               ├── .agent_state_248b0e6e0c2e10116e340853c184130f93d03533.bin
+│   │               ├── .agent_state_25a1f4e362fe1c1398d77f45d203d54f4c775404.bin
+│   │               ├── .agent_state_25a33b5d543b84853e8cbd164417825b0efdaac2.bin
+│   │               ├── .agent_state_26993fa0960d47170c2af19230884fdddc5d7c3e.bin
+│   │               ├── .agent_state_289fc203d9f8e02c5d853829abfbca8eb71a480c.bin
+│   │               ├── .agent_state_2c235d8c9966657fdb5c8397d62ca16ad1247f3d.bin
+│   │               ├── .agent_state_2cd21a70b23a20eb6c29398ec088c1583232ebf2.bin
+│   │               ├── .agent_state_2e2436bb9ace692f6d3bc6bcd6a49df718957a8a.bin
+│   │               ├── .agent_state_3008f3050b2ed497cf3b2069a9e9e0a4b0466d92.bin
+│   │               ├── .agent_state_31abf944a6c87d6aa79a3dc1da8caf1d8524f30e.bin
+│   │               ├── .agent_state_32e195890ee979a5e2edc8e16fce5ef02e17fc46.bin
+│   │               ├── .agent_state_35b319f7a4f6f39010926a1c063ca286ae7ddbae.bin
+│   │               ├── .agent_state_36416e9307f0d678d2da9035586b87814e0c26f2.bin
+│   │               ├── .agent_state_37deeab2b9172cc59f7f0f4969bb7be07e2277ed.bin
+│   │               ├── .agent_state_383ed615f12d88a14d7d0328d92b0772c85a3b2f.bin
+│   │               ├── .agent_state_38f8786a271bbbf152cf36a2b03b1f9430f6410e.bin
+│   │               ├── .agent_state_39096940f1243cc759116fe5dc2fb2fbc80512d7.bin
+│   │               ├── .agent_state_39680623915a383b8ab19870f657e7562490aa1d.bin
+│   │               ├── .agent_state_3cfc13d76a77d8b64507247a74e203bca0aeadfe.bin
+│   │               ├── .agent_state_3d03292869b74c59ed11b65ec0a3f114ba57f938.bin
+│   │               ├── .agent_state_3d30e81b725ef9a61b8be24d39735f1cafbdfbe0.bin
+│   │               ├── .agent_state_3e78a652794121336d322bf631a8ba72607a54da.bin
+│   │               ├── .agent_state_3f9aee281a9b47ee4a2415e04dc4c7c9fbaf3777.bin
+│   │               ├── .agent_state_41566cefeb9a921471d3542ffe3a3d47cd4b2496.bin
+│   │               ├── .agent_state_4278b531eb84e1d424390f95e9e4e2c71e1760e7.bin
+│   │               ├── .agent_state_46a8919914281083d4c1cebb4f427d5800906c8b.bin
+│   │               ├── .agent_state_4812e0d053ce6fbe27a33ade646d9c21db5fb93d.bin
+│   │               ├── .agent_state_4a50b67e01fc9fd3b3de54731fe134df315d0e58.bin
+│   │               ├── .agent_state_4b5648f3df60be67af2aeea8497237c99c17f51d.bin
+│   │               ├── .agent_state_4c6c4732612afae9814058b3b132d63588125ec7.bin
+│   │               ├── .agent_state_4cbb175fe224e296d48ba0040ff8e5cba5aa469c.bin
+│   │               ├── .agent_state_4f650c2bb6b7eddee3913b6049e8b394e3dd1bf9.bin
+│   │               ├── .agent_state_5013909d32275ec78b92553f64b08b71f0d14c73.bin
+│   │               ├── .agent_state_5276b67dccc2104397e9c0aa808407a25c773e61.bin
+│   │               ├── .agent_state_52fe61f0727c379b029b40fb206477a6f0c0e423.bin
+│   │               ├── .agent_state_59fffdb26e1c7bf6758d7941c759f75c9cb08e84.bin
+│   │               ├── .agent_state_5a022603c8b6cb83f68fb34430d60a0067d945f8.bin
+│   │               ├── .agent_state_5c1ee5d40edad91ef20f390a082afa3fc132b446.bin
+│   │               ├── .agent_state_5fa112c858eeb20d8283f9a70e91b0ee5b4fa255.bin
+│   │               ├── .agent_state_5fe39b7dd8a8d25a4972a5ec10e6dbe32a38d291.bin
+│   │               ├── .agent_state_61932f923d7b67bf16cd0d15935fc64227325af2.bin
+│   │               ├── .agent_state_63f7beca9aa32d092b7b4cc8f899afb33734a9df.bin
+│   │               ├── .agent_state_644b898097c4e14dd8b6bd50793c9f506251a305.bin
+│   │               ├── .agent_state_64575729f7af885abd62540b578b0c00cc1bb7aa.bin
+│   │               ├── .agent_state_649676b9c32393deb7d906403ba02a7846274c01.bin
+│   │               ├── .agent_state_660cd27d6fb99d4b3b0c5fcbeb3a5b39beece993.bin
+│   │               ├── .agent_state_66656517ea87c782d5e6c14b94ec9fb089ad7337.bin
+│   │               ├── .agent_state_6673ab6b7aeebdc55f949ca6f2606c28c1666573.bin
+│   │               ├── .agent_state_66b4352d9316a7388ec15a45cb996b8859c86b88.bin
+│   │               ├── .agent_state_69a42a6794f94ea4f4085380b3441ff66c16bc87.bin
+│   │               ├── .agent_state_69a8dbd5abc890964c7c352a01e2421b9dcc63f2.bin
+│   │               ├── .agent_state_6dbff15bec46934b93019efa53c0f0402d34c8c6.bin
+│   │               ├── .agent_state_6e676f755752c5ed9aa5cc34ec370e347e1e99f1.bin
+│   │               ├── .agent_state_6ff9a950541dbeb0124f84a9ab82ff731043f910.bin
+│   │               ├── .agent_state_7201cc6b6e064eb4cb12aa910f0305f766f279bb.bin
+│   │               ├── .agent_state_72a86038af92f178dd5fd79041c63b11c915de8d.bin
+│   │               ├── .agent_state_74b1dffc293a65144203097e795d6f73eca238f2.bin
+│   │               ├── .agent_state_7589614d54c692d56ecb0462f7e12c053cd1f531.bin
+│   │               ├── .agent_state_77530ac2ee8763e28918dcaca6c81289ab13c948.bin
+│   │               ├── .agent_state_77622ed86381f67381f8698b3f2cb63c5a1e5ce8.bin
+│   │               ├── .agent_state_7add0e89a60088da99455bfb700f0ad0981a798a.bin
+│   │               ├── .agent_state_7c63f1c183a8642fd0ababf2b25d572fc2aede12.bin
+│   │               ├── .agent_state_7d9cf13ed51547ca271652397681b4ff9d6ede59.bin
+│   │               ├── .agent_state_8133538c6e815de33f85104d4434dedcdf6f4007.bin
+│   │               ├── .agent_state_84beb5292dc3484c633a12211f325d11261171d0.bin
+│   │               ├── .agent_state_857ecaee2dbfcbb7c29829dc40fcdfccead7faed.bin
+│   │               ├── .agent_state_86698e012aa69decb55a549ce29522d6e35226a2.bin
+│   │               ├── .agent_state_8b6cef1c3815198df466cd8b1a1ceb4c8f6ca651.bin
+│   │               ├── .agent_state_8d28dae3f727940e7ccfcfa58747cd4893e17409.bin
+│   │               ├── .agent_state_9104c201bde48fa88c2357db60707876d447c0f1.bin
+│   │               ├── .agent_state_9154b15c318db1b777a45dd4482ddfec8cc9a5f8.bin
+│   │               ├── .agent_state_92c9f9b7449d53ec8cd2e5566f9dea41980cfa9b.bin
+│   │               ├── .agent_state_98fd6971c53c97951163b286d93487e24d99d774.bin
+│   │               ├── .agent_state_9b8d66fcbb433bc8bd6cf61ced2f033021e6963f.bin
+│   │               ├── .agent_state_9ddb5a7d20e60e7d656868073795a996fb05bb0f.bin
+│   │               ├── .agent_state_9e08bcc1bdfe75603092afcd848084a67cc5ed12.bin
+│   │               ├── .agent_state_9e1efa63cf648013a582d871c289d84c2b3c0f33.bin
+│   │               ├── .agent_state_9e7a8041b5e68d5d8a730dc615fadbcca6d86c95.bin
+│   │               ├── .agent_state_9fbde76bfabfd8116e37955a2086219b93a61cc9.bin
+│   │               ├── .agent_state_9ff5627a9d57606bf51791552f5162f0d5935808.bin
+│   │               ├── .agent_state_a2e178e273752544db9c37579fc2e0549799d6f1.bin
+│   │               ├── .agent_state_a393aa04912c2f96631309d4ebb16fb39a934713.bin
+│   │               ├── .agent_state_a4df4c26fd80c8bdd5bf321a3c2b0fb2baeef90c.bin
+│   │               ├── .agent_state_a67b470b9ce591a545b734d5b08c636ddc433f0e.bin
+│   │               ├── .agent_state_a818a39eccd0a8328b6a3f52a3ce4e2e0b164412.bin
+│   │               ├── .agent_state_acab008bf66e4111e7f0fd5408f655a93eb88606.bin
+│   │               ├── .agent_state_ad6a20fac1c48ab99914f94413e15dcfc2feed50.bin
+│   │               ├── .agent_state_ad974e284fcb8902000d165987b1ab8ab9e38849.bin
+│   │               ├── .agent_state_aea12792cbbd91ede0cc9bf61353c085be4b771e.bin
+│   │               ├── .agent_state_b2b4ffd9f728cefc8878aab9c45f39492ea1f4c3.bin
+│   │               ├── .agent_state_b43cee465d7a413a978a2f27df5bbdc18ebc9421.bin
+│   │               ├── .agent_state_b4520e8dc319b82b70432c8293c96f7f6df6cd87.bin
+│   │               ├── .agent_state_b47025e2d6a08bbe48c34d1a479074483928e881.bin
+│   │               ├── .agent_state_b556937bf3830a8b25e34b03921bfbb774c15cea.bin
+│   │               ├── .agent_state_b605c4ce26be5a67584fa694907b969e96027972.bin
+│   │               ├── .agent_state_b619a3b4fa0042d84a3a068a5e2be272ee2f2dff.bin
+│   │               ├── .agent_state_b7035485b9f46addaa26c30e31f3efc0fe6b439d.bin
+│   │               ├── .agent_state_b877406da0d917c59f1558f16c21d574f437cc32.bin
+│   │               ├── .agent_state_b93f06b022f2dafede97f7b51c3bac070a3d871c.bin
+│   │               ├── .agent_state_b9cc59ce19a6227e1c0f853b547b84e2b5310dd5.bin
+│   │               ├── .agent_state_bb3f7024fb0cb6883b54b422bb749a7796f08229.bin
+│   │               ├── .agent_state_bb6280c5fbbe32c67cc7716f6aaa081d5f863027.bin
+│   │               ├── .agent_state_bbf395aea086860d4ee13c49941bb88cb746e52f.bin
+│   │               ├── .agent_state_be5fb9d9995f2d81ff46dda58b1b60ff7bb6864a.bin
+│   │               ├── .agent_state_c0971d4653d87db3a9626e1c0071ec8e4c85ac74.bin
+│   │               ├── .agent_state_c2a2d300b53c7ecc832e257f0bd75663ab8da146.bin
+│   │               ├── .agent_state_c363b19ac2d985f2649e46b48b5d1bc65df6ff37.bin
+│   │               ├── .agent_state_c4189e41c1fcb9a0c0fdbde86af06017db9982c7.bin
+│   │               ├── .agent_state_c62a7c56f11d4b11626130de27729f3432261e6c.bin
+│   │               ├── .agent_state_cc7087c38d8e6934447debd59e6bd37021a51cc4.bin
+│   │               ├── .agent_state_ccfc94b14f8f7de5ff764e28a0d0b1f2c6e35323.bin
+│   │               ├── .agent_state_cee75263c4241287fc3a2d88b2de8003b9719e26.bin
+│   │               ├── .agent_state_cf4517cd9c454056d79f56210d7a2438c48b40b8.bin
+│   │               ├── .agent_state_d061ae3c40ba3e09cd11972ae53dc9607a75736b.bin
+│   │               ├── .agent_state_d13bbc1c6ad1cd8e613e37713ca732265185579f.bin
+│   │               ├── .agent_state_d18f989ffe7115ac0a51b63faaaa9f7ee24be38a.bin
+│   │               ├── .agent_state_d43bba3342afe4e8c4c023159c091a3a91d454ff.bin
+│   │               ├── .agent_state_d4c62e423519c6ec21f1cedf5aa012036b9c9793.bin
+│   │               ├── .agent_state_d4d4b9db23ffe49dc616551de6a2e8b5105b4b2e.bin
+│   │               ├── .agent_state_d5c6aa787ab1da69a079828c0b1c1c005ceecbc2.bin
+│   │               ├── .agent_state_d603a587b14dd569895ed2b87ce9400bb5c8a3bf.bin
+│   │               ├── .agent_state_d6dc5b15ede1bc68c238adc5f766fa3c008d2089.bin
+│   │               ├── .agent_state_d8b2b54229744d0d7b29dd74d9d1c8c74ab97272.bin
+│   │               ├── .agent_state_db60f8c7e0bf6eedab8cb09809e8c33a889542d7.bin
+│   │               ├── .agent_state_db997a7731a01390efdddf7bf24b9fa592283668.bin
+│   │               ├── .agent_state_dc5c7d6fe3c8b6ae15ebea550476aae24d5061ca.bin
+│   │               ├── .agent_state_dcca22f5a29a9660308d140314d6bfcc82f5bde3.bin
+│   │               ├── .agent_state_df44919bfb25b19ada47510b094e721a494aa901.bin
+│   │               ├── .agent_state_dfb692240b7666d6358bbee34f245173c9e03522.bin
+│   │               ├── .agent_state_e0c202cb593241314ce13d2297967441e63d7e45.bin
+│   │               ├── .agent_state_e2866ddcbc2942c760bc0917203b7360ae57c212.bin
+│   │               ├── .agent_state_e4a50015c770bde6105452eedd194320aee219ac.bin
+│   │               ├── .agent_state_e743523489114185d11c5e52db51a63daebc6ca4.bin
+│   │               ├── .agent_state_ed20f588f33b114cbdffc61c9abed443ae94a297.bin
+│   │               ├── .agent_state_ee0490f155cf4e0927903d9a7c7f137d16b6c290.bin
+│   │               ├── .agent_state_ee2d1a9910a5244e285a5aaf7d0e1b81652c767d.bin
+│   │               ├── .agent_state_effc701482fe2ceeb11d08d7f03534a18ada07e0.bin
+│   │               ├── .agent_state_f048ba91e96d6d24355a30a35b2cd8aa9437423c.bin
+│   │               ├── .agent_state_f4c78337a6a9bba4eb41cacac4d377a9adc3ea17.bin
+│   │               ├── .agent_state_fa00defda55d257121c5ee4a9d0a407ebc2f3dff.bin
+│   │               ├── .agent_state_fb844cd6c5cf94fc3b5157cad802627f31febf4d.bin
+│   │               ├── .agent_state_fd96fc7f1cd1e251db1a9592e2829653c7ea90de.bin
+│   │               ├── .agent_state_feb6345f22cf7062bba3ef7ef211e11010a33fc7.bin
+│   │               ├── .agent_state_ffce3eb3d7529c57dc4baaa552c79ec245682409.bin
+│   │               ├── .agent_state_main.bin
+│   │               ├── .latest.json
+│   │               ├── design_reference
+│   │               │   └── 05cb8cd4-04ac-44b4-ac30-3ed69a34b156
+│   │               │       └── e478bcbc-5292-4ef3-84e5-a5d316fcaf7b.html
+│   │               ├── filesystem
+│   │               │   └── filesystem_state.json
+│   │               ├── rapid_build_started
+│   │               ├── rapid_build_success
+│   │               └── repl_state.bin
+│   ├── .replit
+│   ├── astro-database-export-2025-09-08
+│   │   ├── README.md
+│   │   ├── SCHEMA.md
+│   │   ├── audit_logs.json
+│   │   ├── auth_sessions.json
+│   │   ├── chat_messages.json
+│   │   ├── consultations.json
+│   │   ├── course_enrollments.json
+│   │   ├── courses.json
+│   │   ├── export-summary.json
+│   │   ├── faqs.json
+│   │   ├── home_tuition_applications.json
+│   │   ├── home_tuition_courses.json
+│   │   ├── legal_agreements.json
+│   │   ├── mobile_number_changes.json
+│   │   ├── notifications.json
+│   │   ├── orders.json
+│   │   ├── otp_verifications.json
+│   │   ├── products.json
+│   │   ├── security_events.json
+│   │   ├── student_conversations.json
+│   │   ├── student_messages.json
+│   │   ├── support_chat_messages.json
+│   │   ├── support_chats.json
+│   │   ├── user_contacts.json
+│   │   └── users.json
+│   ├── attached_assets
+│   │   └── Astrology project part by part to trae_1757148233976.txt
+│   ├── client
+│   │   ├── index.html
+│   │   └── src
+│   │       ├── App.tsx
+│   │       ├── components
+│   │       │   ├── AutoTranslate.tsx
+│   │       │   ├── FileUploader.tsx
+│   │       │   ├── booking
+│   │       │   │   ├── BookingSummary.tsx
+│   │       │   │   ├── Step1_TypeSelection.tsx
+│   │       │   │   ├── Step2_PlanAndTopicSelection.tsx
+│   │       │   │   ├── Step3_PersonalDetails.tsx
+│   │       │   │   ├── Step4_Schedule.tsx
+│   │       │   │   └── Step5_Confirmation.tsx
+│   │       │   ├── consultation
+│   │       │   │   ├── chat.tsx
+│   │       │   │   └── video-call.tsx
+│   │       │   ├── layout
+│   │       │   │   ├── cosmic-background.tsx
+│   │       │   │   ├── footer.tsx
+│   │       │   │   └── navigation.tsx
+│   │       │   ├── support
+│   │       │   │   ├── ai-chatbot.tsx
+│   │       │   │   └── chatbot-provider.tsx
+│   │       │   └── ui
+│   │       │       ├── accordion.tsx
+│   │       │       ├── alert-dialog.tsx
+│   │       │       ├── alert.tsx
+│   │       │       ├── animated-logo.tsx
+│   │       │       ├── aspect-ratio.tsx
+│   │       │       ├── avatar.tsx
+│   │       │       ├── badge.tsx
+│   │       │       ├── breadcrumb.tsx
+│   │       │       ├── button.tsx
+│   │       │       ├── calendar.tsx
+│   │       │       ├── card.tsx
+│   │       │       ├── carousel.tsx
+│   │       │       ├── cart-drawer.tsx
+│   │       │       ├── chart.tsx
+│   │       │       ├── checkbox.tsx
+│   │       │       ├── collapsible.tsx
+│   │       │       ├── command.tsx
+│   │       │       ├── context-menu.tsx
+│   │       │       ├── dialog.tsx
+│   │       │       ├── drawer.tsx
+│   │       │       ├── dropdown-menu.tsx
+│   │       │       ├── form.tsx
+│   │       │       ├── glass-card.tsx
+│   │       │       ├── hover-card.tsx
+│   │       │       ├── input-otp.tsx
+│   │       │       ├── input.tsx
+│   │       │       ├── label.tsx
+│   │       │       ├── menubar.tsx
+│   │       │       ├── navigation-menu.tsx
+│   │       │       ├── neon-button.tsx
+│   │       │       ├── pagination.tsx
+│   │       │       ├── popover.tsx
+│   │       │       ├── progress.tsx
+│   │       │       ├── radio-group.tsx
+│   │       │       ├── resizable.tsx
+│   │       │       ├── scroll-area.tsx
+│   │       │       ├── select.tsx
+│   │       │       ├── separator.tsx
+│   │       │       ├── sheet.tsx
+│   │       │       ├── sidebar.tsx
+│   │       │       ├── skeleton.tsx
+│   │       │       ├── slider.tsx
+│   │       │       ├── switch.tsx
+│   │       │       ├── table.tsx
+│   │       │       ├── tabs.tsx
+│   │       │       ├── textarea.tsx
+│   │       │       ├── toast.tsx
+│   │       │       ├── toaster.tsx
+│   │       │       ├── toggle-group.tsx
+│   │       │       ├── toggle.tsx
+│   │       │       └── tooltip.tsx
+│   │       ├── contexts
+│   │       │   └── LanguageContext.tsx
+│   │       ├── data
+│   │       │   ├── consultationData.ts
+│   │       │   └── global-phone-codes.ts
+│   │       ├── hooks
+│   │       │   ├── use-mobile.tsx
+│   │       │   ├── use-toast.ts
+│   │       │   └── use-websocket.tsx
+│   │       ├── index.css
+│   │       ├── lib
+│   │       │   ├── bookingSchema.ts
+│   │       │   ├── i18n.ts
+│   │       │   ├── jitsi.ts
+│   │       │   ├── queryClient.ts
+│   │       │   └── utils.ts
+│   │       ├── main.tsx
+│   │       ├── pages
+│   │       │   ├── admin
+│   │       │   │   ├── analytics.tsx
+│   │       │   │   ├── clients.tsx
+│   │       │   │   ├── consultations.tsx
+│   │       │   │   ├── courses.tsx
+│   │       │   │   ├── dashboard.tsx
+│   │       │   │   ├── faqs.tsx
+│   │       │   │   ├── home-tuition-management.tsx
+│   │       │   │   ├── notifications.tsx
+│   │       │   │   ├── products.tsx
+│   │       │   │   ├── simple-dashboard.tsx
+│   │       │   │   └── support-chat.tsx
+│   │       │   ├── admin-working.tsx
+│   │       │   ├── auth
+│   │       │   │   ├── auth.tsx
+│   │       │   │   ├── login.tsx
+│   │       │   │   └── register.tsx
+│   │       │   ├── booking.tsx
+│   │       │   ├── checkout.tsx
+│   │       │   ├── consultation-feedback.tsx
+│   │       │   ├── consultation-session.tsx
+│   │       │   ├── consultation.tsx
+│   │       │   ├── courses.tsx
+│   │       │   ├── home-tuition
+│   │       │   │   └── apply
+│   │       │   │       ├── group
+│   │       │   │       │   └── [courseId].tsx
+│   │       │   │       └── one-to-one
+│   │       │   │           └── [courseId].tsx
+│   │       │   ├── home-tuition.tsx
+│   │       │   ├── home.tsx
+│   │       │   ├── mobile-login.tsx
+│   │       │   ├── not-found.tsx
+│   │       │   ├── payment
+│   │       │   │   ├── failed.tsx
+│   │       │   │   └── success.tsx
+│   │       │   ├── products.tsx
+│   │       │   └── test-admin.tsx
+│   │       └── utils
+│   │           └── autoTranslate.ts
+│   ├── components.json
+│   ├── data
+│   │   └── global-phone-codes.ts
+│   ├── database_export
+│   │   ├── README.md
+│   │   └── export_summary.json
+│   ├── drizzle.config.ts
+│   ├── export-database-fixed.js
+│   ├── export-database.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── replit.md
+│   ├── server
+│   │   ├── config
+│   │   ├── consultation-session.ts
+│   │   ├── controllers
+│   │   │   ├── adminController.ts
+│   │   │   ├── authController.ts
+│   │   │   ├── bookingController.ts
+│   │   │   ├── consultationController.ts
+│   │   │   └── paymentController.ts
+│   │   ├── db.ts
+│   │   ├── email-service.ts
+│   │   ├── gemini.ts
+│   │   ├── index.ts
+│   │   ├── middleware
+│   │   │   ├── authMiddleware.ts
+│   │   │   └── validationMiddleware.ts
+│   │   ├── models
+│   │   ├── objectStorage.ts
+│   │   ├── phonepe.ts
+│   │   ├── routes.ts
+│   │   ├── services
+│   │   │   ├── authService.ts
+│   │   │   ├── bookingService.ts
+│   │   │   ├── paymentService.ts
+│   │   │   └── userService.ts
+│   │   ├── storage.ts
+│   │   ├── twilio-service.ts
+│   │   ├── utils
+│   │   └── vite.ts
+│   ├── shared
+│   │   ├── constants
+│   │   ├── schema.ts
+│   │   ├── types
+│   │   │   ├── booking.ts
+│   │   │   ├── consultation.ts
+│   │   │   ├── payment.ts
+│   │   │   └── user.ts
+│   │   └── utils
+│   ├── tailwind.config.ts
+│   ├── tsconfig.json
+│   └── vite.config.ts
+├── README.md
+├── all_ui_code.txt
+├── attached_assets
+│   ├── Astrology-project-Replit-promt_1757925107321.txt
+│   ├── Pasted-2-User-Authentication-Security-Admin-and-Client-Astrology-student-Accounts-All-global-phone-co-1757931406857_1757931406859.txt
+│   ├── Pasted-2-User-Authentication-Security-Admin-and-Client-Astrology-student-Accounts-All-global-phone-co-1757937947740_1757937947741.txt
+│   ├── Pasted-2-User-Authentication-Security-Admin-and-Client-Astrology-student-Accounts-All-global-phone-co-1757939883492_1757939883493.txt
+│   ├── Screenshot 2025-09-15 145349_1757929619626.png
+│   ├── Screenshot 2025-09-15 180521_1757950816830.png
+│   ├── generated_images
+│   │   └── Cosmic_astrology_logo_design_b9c98252.png
+│   ├── image_1757928237205.png
+│   ├── image_1757928781873.png
+│   ├── image_1757929081376.png
+│   ├── image_1757932180930.png
+│   ├── image_1757932299803.png
+│   ├── image_1757932320433.png
+│   ├── image_1757932424235.png
+│   ├── image_1757932627670.png
+│   ├── image_1757932651936.png
+│   ├── image_1757933045973.png
+│   ├── image_1757933619691.png
+│   ├── image_1757934020037.png
+│   ├── image_1757934354483.png
+│   ├── image_1757939734922.png
+│   ├── image_1757944213679.png
+│   ├── image_1757944243129.png
+│   ├── image_1757944770769.png
+│   ├── image_1757945194334.png
+│   ├── image_1757947002693.png
+│   ├── image_1757949660609.png
+│   ├── image_1757952371080.png
+│   ├── targeted_element_1757925120480.png
+│   ├── targeted_element_1757927285209.png
+│   ├── targeted_element_1757927464410.png
+│   ├── targeted_element_1757927801333.png
+│   ├── targeted_element_1757930463696.png
+│   ├── targeted_element_1757930816220.png
+│   ├── targeted_element_1757946046998.png
+│   ├── targeted_element_1757948441109.png
+│   ├── targeted_element_1757950265631.png
+│   ├── targeted_element_1757950304915.png
+│   └── targeted_element_1757952649641.png
+├── file_list.txt
+├── package-lock.json
+├── package.json
+├── project-tree.txt
+├── pyproject.toml
+├── replit.md
+├── scope_of_work.txt
+├── server
+│   └── db.ts
+├── structure_part1_skeleton.txt
+├── structure_part2_client.txt
+├── structure_part3_server_shared.txt
+├── structure_server_detailed.txt
+└── uv.lock
+
+55 directories, 487 files

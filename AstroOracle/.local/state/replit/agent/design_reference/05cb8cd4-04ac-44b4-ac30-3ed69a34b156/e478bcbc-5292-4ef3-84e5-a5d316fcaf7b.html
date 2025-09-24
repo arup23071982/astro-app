@@ -1,0 +1,1387 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Guru Astro Remedy - Expert Astrology Consultations by Arup Shastri</title>
+    <meta name="description" content="Get personalized astrology consultations, learn astrology courses, and discover cosmic remedies with expert astrologer Arup Shastri. 18+ years of experience in Vedic astrology.">
+    <meta name="keywords" content="astrology, horoscope, vedic astrology, consultation, arup shastri, astrologer, zodiac, palmistry, numerology">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    popover: {
+                        DEFAULT: "var(--popover)",
+                        foreground: "var(--popover-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)"
+                },
+                animation: {
+                    'float': 'float 6s ease-in-out infinite',
+                    'glow': 'glow 2s ease-in-out infinite alternate',
+                    'orbit': 'orbit 20s linear infinite',
+                    'twinkle': 'twinkle 3s ease-in-out infinite',
+                }
+            }
+        }
+    };
+    </script>
+    
+    <style>
+        :root {
+            --background: hsl(240 100% 4%);
+            --foreground: hsl(300 20% 99%);
+            --card: hsl(240 20% 8%);
+            --card-foreground: hsl(300 20% 99%);
+            --popover: hsl(240 20% 8%);
+            --popover-foreground: hsl(300 20% 99%);
+            --primary: hsl(280 100% 70%);
+            --primary-foreground: hsl(240 100% 4%);
+            --secondary: hsl(195 100% 50%);
+            --secondary-foreground: hsl(240 100% 4%);
+            --muted: hsl(240 20% 15%);
+            --muted-foreground: hsl(300 10% 70%);
+            --accent: hsl(280 100% 70%);
+            --accent-foreground: hsl(240 100% 4%);
+            --destructive: hsl(0 62% 30%);
+            --destructive-foreground: hsl(300 20% 99%);
+            --border: hsl(240 20% 18%);
+            --input: hsl(240 20% 18%);
+            --ring: hsl(280 100% 70%);
+            --radius: 12px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0c0c1e 0%, #1a0b2e 25%, #16213e  75%, #0c0c1e 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism styles */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .glass-card {
+            background: rgba(139, 69, 219, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(139, 69, 219, 0.2);
+            box-shadow: 0 8px 32px rgba(139, 69, 219, 0.1);
+        }
+
+        /* Neon glow effects */
+        .neon-text {
+            text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px currentColor;
+        }
+
+        .neon-border {
+            box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+        }
+
+        .neon-button {
+            background: linear-gradient(45deg, hsl(280 100% 70%), hsl(195 100% 50%));
+            box-shadow: 0 0 20px hsl(280 100% 70%), 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .neon-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px hsl(280 100% 70%), 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Animated background elements */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes glow {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+
+        @keyframes orbit {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .cosmic-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s ease-in-out infinite;
+        }
+
+        .planet {
+            position: absolute;
+            border-radius: 50%;
+            animation: orbit 20s linear infinite;
+        }
+
+        .comet {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: linear-gradient(45deg, #00f5ff, #ffffff);
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00f5ff;
+        }
+
+        /* Responsive navigation */
+        .nav-glass {
+            background: rgba(26, 11, 46, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(139, 69, 219, 0.2);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(139, 69, 219, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, hsl(280 100% 70%), hsl(195 100% 50%));
+            border-radius: 4px;
+        }
+
+        /* Mobile menu animation */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Form styling */
+        .form-input {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(139, 69, 219, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-input:focus {
+            border-color: hsl(280 100% 70%);
+            box-shadow: 0 0 0 2px rgba(139, 69, 219, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-foreground">
+    <!-- Animated Cosmic Background -->
+    <div class="cosmic-bg">
+        <!-- Stars -->
+        <div class="star" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+        <div class="star" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
+        <div class="star" style="top: 30%; left: 60%; animation-delay: 2s;"></div>
+        <div class="star" style="top: 40%; left: 30%; animation-delay: 0.5s;"></div>
+        <div class="star" style="top: 60%; left: 90%; animation-delay: 1.5s;"></div>
+        <div class="star" style="top: 70%; left: 15%; animation-delay: 2.5s;"></div>
+        <div class="star" style="top: 80%; left: 70%; animation-delay: 0.8s;"></div>
+        <div class="star" style="top: 90%; left: 40%; animation-delay: 1.8s;"></div>
+
+        <!-- Planets -->
+        <div class="planet" style="top: 15%; left: 85%; width: 12px; height: 12px; background: linear-gradient(45deg, #ff6b6b, #feca57); animation-duration: 25s;"></div>
+        <div class="planet" style="top: 25%; left: 10%; width: 8px; height: 8px; background: linear-gradient(45deg, #48cae4, #023e8a); animation-duration: 30s;"></div>
+        <div class="planet" style="top: 55%; left: 75%; width: 10px; height: 10px; background: linear-gradient(45deg, #f72585, #7209b7); animation-duration: 35s;"></div>
+        <div class="planet" style="top: 75%; left: 25%; width: 6px; height: 6px; background: linear-gradient(45deg, #06ffa5, #4d8076); animation-duration: 40s;"></div>
+
+        <!-- Comets -->
+        <div class="comet animate-pulse" style="top: 5%; left: 50%; animation-delay: 0s;"></div>
+        <div class="comet animate-pulse" style="top: 45%; left: 5%; animation-delay: 3s;"></div>
+        <div class="comet animate-pulse" style="top: 85%; left: 95%; animation-delay: 6s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation [Fixed glassmorphism navigation with mobile menu] -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center neon-border">
+                        <span class="text-primary-foreground font-bold text-xl">JG</span>
+                    </div>
+                    <span class="font-bold text-xl neon-text text-primary">Jai Guru Astro Remedy</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-foreground hover:text-primary transition-colors">Home</a>
+                    <a href="#services" class="text-foreground hover:text-primary transition-colors">Services</a>
+                    <a href="#courses" class="text-foreground hover:text-primary transition-colors">Courses</a>
+                    <a href="#products" class="text-foreground hover:text-primary transition-colors">Products</a>
+                    <a href="#about" class="text-foreground hover:text-primary transition-colors">About</a>
+                    
+                    <!-- Language Selector -->
+                    <select class="form-input rounded-lg px-3 py-1 text-sm" data-bind="selectedLanguage">
+                        <option value="en">English</option>
+                        <option value="hi">हिंदी</option>
+                        <option value="bn">বাংলা</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                    </select>
+
+                    <!-- Auth Buttons -->
+                    <button class="px-4 py-2 text-sm text-foreground hover:text-primary transition-colors">Login</button>
+                    <button class="neon-button px-6 py-2 rounded-lg text-primary-foreground font-semibold">Book Consultation</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu md:hidden glass-card fixed top-16 left-0 w-full h-screen">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#home" class="block text-foreground hover:text-primary transition-colors py-2">Home</a>
+                <a href="#services" class="block text-foreground hover:text-primary transition-colors py-2">Services</a>
+                <a href="#courses" class="block text-foreground hover:text-primary transition-colors py-2">Courses</a>
+                <a href="#products" class="block text-foreground hover:text-primary transition-colors py-2">Products</a>
+                <a href="#about" class="block text-foreground hover:text-primary transition-colors py-2">About</a>
+                <div class="pt-4 border-t border-border">
+                    <button class="w-full mb-3 px-4 py-2 text-sm text-foreground hover:text-primary transition-colors border border-border rounded-lg">Login</button>
+                    <button class="w-full neon-button px-6 py-3 rounded-lg text-primary-foreground font-semibold">Book Consultation</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: HeroSection [Main hero with booking CTA and astrologer introduction] -->
+    <section id="home" class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 neon-text text-primary animate-float">
+                    Discover Your Cosmic Destiny
+                </h1>
+                <p class="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                    Unlock the secrets of the universe with expert Vedic astrology consultations by 
+                    <span class="text-primary font-semibold">Arup Shastri</span> - 18+ years of transformative guidance
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button class="neon-button px-8 py-4 rounded-xl text-lg font-semibold" data-event="click:bookConsultation">
+                        Book Your Reading Now
+                    </button>
+                    <button class="glass px-8 py-4 rounded-xl text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                        Explore Courses
+                    </button>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="glass-card rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold text-primary mb-2">18+</div>
+                        <div class="text-muted-foreground">Years Experience</div>
+                    </div>
+                    <div class="glass-card rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold text-secondary mb-2">5000+</div>
+                        <div class="text-muted-foreground">Satisfied Clients</div>
+                    </div>
+                    <div class="glass-card rounded-xl p-6 text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">100+</div>
+                        <div class="text-muted-foreground">Countries Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- Astrologer Profile Section -->
+    <!-- @COMPONENT: AstrologerProfile [Detailed profile of Arup Shastri with experience highlights] -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-card rounded-2xl p-8 md:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <!-- Professional astrologer portrait with cosmic aura effect -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                             alt="Arup Shastri - Expert Vedic Astrologer" 
+                             class="rounded-2xl shadow-2xl w-full max-w-md mx-auto neon-border" />
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6 neon-text text-primary">Meet Astrologer Arup Shastri</h2>
+                        <p class="text-lg text-muted-foreground mb-6">
+                            With over <span class="text-primary font-semibold">18 years of dedicated practice</span> in Vedic astrology, 
+                            Arup Shastri has guided thousands of souls towards clarity, purpose, and cosmic alignment.
+                        </p>
+                        
+                        <!-- Expertise Areas -->
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="glass p-4 rounded-lg">
+                                <h4 class="font-semibold text-primary mb-2">Vedic Astrology</h4>
+                                <p class="text-sm text-muted-foreground">Traditional birth chart analysis</p>
+                            </div>
+                            <div class="glass p-4 rounded-lg">
+                                <h4 class="font-semibold text-primary mb-2">Palmistry</h4>
+                                <p class="text-sm text-muted-foreground">Hand reading & life insights</p>
+                            </div>
+                            <div class="glass p-4 rounded-lg">
+                                <h4 class="font-semibold text-primary mb-2">Numerology</h4>
+                                <p class="text-sm text-muted-foreground">Number patterns & destiny</p>
+                            </div>
+                            <div class="glass p-4 rounded-lg">
+                                <h4 class="font-semibold text-primary mb-2">Cosmic Remedies</h4>
+                                <p class="text-sm text-muted-foreground">Healing solutions & guidance</p>
+                            </div>
+                        </div>
+
+                        <button class="neon-button px-8 py-3 rounded-xl font-semibold">
+                            Schedule Personal Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AstrologerProfile -->
+
+    <!-- Services Section -->
+    <!-- @COMPONENT: ServicesSection [Consultation types with booking options] -->
+    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 neon-text text-primary">Consultation Services</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Choose from multiple consultation formats designed to provide you with personalized cosmic guidance
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Video Consultation -->
+                <div class="glass-card rounded-xl p-8 text-center hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 neon-border">
+                        <svg class="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-foreground">Video Call</h3>
+                    <p class="text-muted-foreground mb-6">Face-to-face consultation via secure video call using Jitsi Meet platform</p>
+                    <div class="text-2xl font-bold text-primary mb-4">₹2,500</div>
+                    <button class="w-full neon-button py-3 rounded-lg font-semibold" data-event="click:bookVideoCall">
+                        Book Video Session
+                    </button>
+                </div>
+
+                <!-- Audio Consultation -->
+                <div class="glass-card rounded-xl p-8 text-center hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6" style="box-shadow: 0 0 20px var(--secondary);">
+                        <svg class="w-8 h-8 text-secondary-foreground" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.793L4.97 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.97l3.413-2.793a1 1 0 011.617.793zm7.617.808a1 1 0 00-1.414 1.414 6.987 6.987 0 010 9.88 1 1 0 101.414 1.414 8.987 8.987 0 000-12.708zm-2.829 2.828a1 1 0 00-1.414 1.414 2.987 2.987 0 010 4.242 1 1 0 101.414 1.414 4.987 4.987 0 000-7.07z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-foreground">Audio Call</h3>
+                    <p class="text-muted-foreground mb-6">Voice-only consultation for focused spiritual guidance and clarity</p>
+                    <div class="text-2xl font-bold text-secondary mb-4">₹1,800</div>
+                    <button class="w-full bg-secondary text-secondary-foreground py-3 rounded-lg font-semibold hover:brightness-110 transition-all">
+                        Book Audio Session
+                    </button>
+                </div>
+
+                <!-- Chat Consultation -->
+                <div class="glass-card rounded-xl p-8 text-center hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6" style="box-shadow: 0 0 20px var(--accent);">
+                        <svg class="w-8 h-8 text-accent-foreground" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-foreground">Chat Session</h3>
+                    <p class="text-muted-foreground mb-6">Text-based consultation through secure in-app messaging system</p>
+                    <div class="text-2xl font-bold text-accent mb-4">₹1,200</div>
+                    <button class="w-full bg-accent text-accent-foreground py-3 rounded-lg font-semibold hover:brightness-110 transition-all">
+                        Start Chat Session
+                    </button>
+                </div>
+
+                <!-- In-Person Consultation -->
+                <div class="glass-card rounded-xl p-8 text-center hover:scale-105 transition-transform">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6" style="box-shadow: 0 0 20px #eab308;">
+                        <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-foreground">In-Person</h3>
+                    <p class="text-muted-foreground mb-6">Traditional face-to-face consultation at designated locations</p>
+                    <div class="text-2xl font-bold text-yellow-500 mb-4">₹5,000</div>
+                    <button class="w-full bg-yellow-500 text-black py-3 rounded-lg font-semibold hover:brightness-110 transition-all">
+                        Book In-Person
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ServicesSection -->
+
+    <!-- Courses Section -->
+    <!-- @COMPONENT: CoursesSection [Astrology learning courses with enrollment] -->
+    <section id="courses" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 neon-text text-primary">Astrology Courses</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Master the ancient wisdom of Vedic astrology with comprehensive courses designed for all levels
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Beginner Course -->
+                <div class="glass-card rounded-xl p-8">
+                    <div class="mb-6">
+                        <!-- Zodiac wheel illustration for beginners -->
+                        <img src="https://pixabay.com/get/ga80b94029cbae957890809d49314e3ca02fbacbddcd5095c79194955bcb746aaf5d78c4ad5b58afa5981076f8414916abca374dc58616759e12ec2d945a9c679_1280.jpg" 
+                             alt="Zodiac wheel and astrological symbols for beginners" 
+                             class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary">Astrology Fundamentals</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Perfect for beginners. Learn the basics of Vedic astrology, zodiac signs, houses, and planetary influences.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">12 comprehensive modules</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Interactive assignments</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Certificate upon completion</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-3xl font-bold text-primary mb-6">₹15,999</div>
+                    <button class="w-full neon-button py-3 rounded-lg font-semibold" data-event="click:enrollCourse" data-course="fundamentals">
+                        Enroll Now
+                    </button>
+                </div>
+
+                <!-- Intermediate Course -->
+                <div class="glass-card rounded-xl p-8 neon-border transform scale-105">
+                    <div class="mb-6">
+                        <!-- Birth chart analysis imagery -->
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                             alt="Complex astrological birth chart with planetary positions" 
+                             class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    <div class="text-center mb-4">
+                        <span class="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary">Advanced Chart Reading</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Deep dive into birth chart analysis, planetary periods, and advanced prediction techniques.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">18 advanced modules</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Live practice sessions</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Professional certification</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-3xl font-bold text-primary mb-6">₹29,999</div>
+                    <button class="w-full neon-button py-3 rounded-lg font-semibold">
+                        Enroll Now
+                    </button>
+                </div>
+
+                <!-- Expert Course -->
+                <div class="glass-card rounded-xl p-8">
+                    <div class="mb-6">
+                        <!-- Traditional Sanskrit astrological texts and cosmic imagery -->
+                        <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                             alt="Ancient Sanskrit texts and cosmic mandala patterns" 
+                             class="rounded-lg w-full h-48 object-cover" />
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-primary">Master Astrologer Program</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Comprehensive program for aspiring professional astrologers. Master ancient techniques and modern applications.
+                    </p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">24 expert modules</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">1-on-1 mentorship</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm">Master practitioner license</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-3xl font-bold text-primary mb-6">₹49,999</div>
+                    <button class="w-full neon-button py-3 rounded-lg font-semibold">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: CoursesSection -->
+
+    <!-- Products Section -->
+    <!-- @COMPONENT: ProductsSection [Astrological remedy products and accessories] -->
+    <section id="products" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 neon-text text-primary">Cosmic Remedies</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Authentic astrological products, gemstones, and spiritual accessories to enhance your cosmic journey
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Gemstones -->
+                <div class="glass-card rounded-xl p-6 hover:scale-105 transition-transform">
+                    <!-- Beautiful collection of colorful gemstones arranged artistically -->
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Collection of vibrant astrological gemstones including ruby, emerald, and sapphire" 
+                         class="rounded-lg w-full h-48 object-cover mb-4" />
+                    <h3 class="text-xl font-bold mb-2 text-foreground">Astrological Gemstones</h3>
+                    <p class="text-muted-foreground mb-4 text-sm">Authentic certified gemstones for planetary remedies</p>
+                    <div class="text-lg font-bold text-primary mb-4">Starting ₹2,500</div>
+                    <button class="w-full neon-button py-2 rounded-lg font-semibold text-sm">
+                        Browse Collection
+                    </button>
+                </div>
+
+                <!-- Yantras -->
+                <div class="glass-card rounded-xl p-6 hover:scale-105 transition-transform">
+                    <!-- Sacred geometric yantra with intricate patterns -->
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Sacred Sri Yantra geometric pattern with golden details on copper plate" 
+                         class="rounded-lg w-full h-48 object-cover mb-4" />
+                    <h3 class="text-xl font-bold mb-2 text-foreground">Sacred Yantras</h3>
+                    <p class="text-muted-foreground mb-4 text-sm">Energized geometric patterns for prosperity and protection</p>
+                    <div class="text-lg font-bold text-secondary mb-4">Starting ₹1,200</div>
+                    <button class="w-full bg-secondary text-secondary-foreground py-2 rounded-lg font-semibold text-sm hover:brightness-110 transition-all">
+                        View Yantras
+                    </button>
+                </div>
+
+                <!-- Malas -->
+                <div class="glass-card rounded-xl p-6 hover:scale-105 transition-transform">
+                    <!-- Traditional rudraksha mala with detailed beads -->
+                    <img src="https://pixabay.com/get/g8bd88f7f70785144cd6b75b546d45d3968af07bde42c1909663528095458bfc4af9675e09da01ec3663b8a18b5e32f0e59d567ab7e87149cc55fbaea52e01b1e_1280.jpg" 
+                         alt="Traditional rudraksha mala prayer beads with natural brown sacred seeds" 
+                         class="rounded-lg w-full h-48 object-cover mb-4" />
+                    <h3 class="text-xl font-bold mb-2 text-foreground">Spiritual Malas</h3>
+                    <p class="text-muted-foreground mb-4 text-sm">Rudraksha and gemstone malas for meditation</p>
+                    <div class="text-lg font-bold text-accent mb-4">Starting ₹800</div>
+                    <button class="w-full bg-accent text-accent-foreground py-2 rounded-lg font-semibold text-sm hover:brightness-110 transition-all">
+                        Shop Malas
+                    </button>
+                </div>
+
+                <!-- Books -->
+                <div class="glass-card rounded-xl p-6 hover:scale-105 transition-transform">
+                    <!-- Stack of ancient astrology books with mystical appearance -->
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Ancient leather-bound astrology books with mystical symbols and candlelight" 
+                         class="rounded-lg w-full h-48 object-cover mb-4" />
+                    <h3 class="text-xl font-bold mb-2 text-foreground">Astrology Books</h3>
+                    <p class="text-muted-foreground mb-4 text-sm">Comprehensive guides and ancient wisdom texts</p>
+                    <div class="text-lg font-bold text-yellow-500 mb-4">Starting ₹500</div>
+                    <button class="w-full bg-yellow-500 text-black py-2 rounded-lg font-semibold text-sm hover:brightness-110 transition-all">
+                        Browse Books
+                    </button>
+                </div>
+            </div>
+
+            <!-- Special Offer -->
+            <div class="mt-16 glass-card rounded-xl p-8 text-center neon-border">
+                <h3 class="text-2xl font-bold mb-4 text-primary">Complete Remedy Kit</h3>
+                <p class="text-muted-foreground mb-6">
+                    Get a personalized remedy kit based on your birth chart analysis. Includes gemstones, yantra, and detailed guidance.
+                </p>
+                <div class="text-3xl font-bold text-primary mb-6">₹9,999 <span class="text-lg text-muted-foreground line-through">₹15,000</span></div>
+                <button class="neon-button px-8 py-3 rounded-xl font-semibold">
+                    Order Custom Kit
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ProductsSection -->
+
+    <!-- Booking Form Section -->
+    <!-- @COMPONENT: BookingForm [Consultation booking with multiple options] -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-card rounded-2xl p-8 md:p-12">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-6 neon-text text-primary">Book Your Consultation</h2>
+                    <p class="text-xl text-muted-foreground">
+                        Choose your preferred consultation type and schedule your session with Astrologer Arup Shastri
+                    </p>
+                </div>
+
+                <form class="space-y-6" data-implementation="Form validation and booking logic">
+                    <!-- Personal Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Full Name *</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg text-foreground placeholder-muted-foreground" 
+                                   placeholder="Enter your full name" data-bind="personalInfo.fullName" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Email Address</label>
+                            <input type="email" class="form-input w-full px-4 py-3 rounded-lg text-foreground placeholder-muted-foreground" 
+                                   placeholder="your.email@example.com" data-bind="personalInfo.email" />
+                        </div>
+                    </div>
+
+                    <!-- Phone Number with Country Code -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Country Code *</label>
+                            <select class="form-input w-full px-4 py-3 rounded-lg text-foreground" data-bind="personalInfo.countryCode" required>
+                                <option value="+91">🇮🇳 +91 (India)</option>
+                                <option value="+1">🇺🇸 +1 (USA)</option>
+                                <option value="+44">🇬🇧 +44 (UK)</option>
+                                <option value="+61">🇦🇺 +61 (Australia)</option>
+                                <option value="+971">🇦🇪 +971 (UAE)</option>
+                                <!-- @IMPLEMENTATION: Load all country codes dynamically -->
+                            </select>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-medium text-foreground mb-2">Phone Number *</label>
+                            <input type="tel" class="form-input w-full px-4 py-3 rounded-lg text-foreground placeholder-muted-foreground" 
+                                   placeholder="Enter your phone number" data-bind="personalInfo.phoneNumber" required />
+                        </div>
+                    </div>
+
+                    <!-- Birth Details -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Date of Birth *</label>
+                            <input type="date" class="form-input w-full px-4 py-3 rounded-lg text-foreground" 
+                                   data-bind="birthDetails.date" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Time of Birth</label>
+                            <input type="time" class="form-input w-full px-4 py-3 rounded-lg text-foreground" 
+                                   data-bind="birthDetails.time" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">AM/PM</label>
+                            <select class="form-input w-full px-4 py-3 rounded-lg text-foreground" data-bind="birthDetails.ampm">
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Place of Birth -->
+                    <div>
+                        <label class="block text-sm font-medium text-foreground mb-2">Place of Birth *</label>
+                        <input type="text" class="form-input w-full px-4 py-3 rounded-lg text-foreground placeholder-muted-foreground" 
+                               placeholder="City, State/Province, Country" data-bind="birthDetails.place" 
+                               data-implementation="Auto-suggest with geolocation API" required />
+                    </div>
+
+                    <!-- Consultation Type -->
+                    <div>
+                        <label class="block text-sm font-medium text-foreground mb-4">Consultation Type *</label>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-primary/10 transition-colors">
+                                <input type="radio" name="consultationType" value="video" class="sr-only" data-bind="consultationType" />
+                                <div class="text-center">
+                                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <svg class="w-6 h-6 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="font-semibold">Video Call</div>
+                                    <div class="text-sm text-muted-foreground">₹2,500</div>
+                                </div>
+                            </label>
+
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-secondary/10 transition-colors">
+                                <input type="radio" name="consultationType" value="audio" class="sr-only" />
+                                <div class="text-center">
+                                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <svg class="w-6 h-6 text-secondary-foreground" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.793L4.97 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.97l3.413-2.793a1 1 0 011.617.793z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="font-semibold">Audio Call</div>
+                                    <div class="text-sm text-muted-foreground">₹1,800</div>
+                                </div>
+                            </label>
+
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-accent/10 transition-colors">
+                                <input type="radio" name="consultationType" value="chat" class="sr-only" />
+                                <div class="text-center">
+                                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <svg class="w-6 h-6 text-accent-foreground" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="font-semibold">Chat Session</div>
+                                    <div class="text-sm text-muted-foreground">₹1,200</div>
+                                </div>
+                            </label>
+
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-yellow-500/10 transition-colors">
+                                <input type="radio" name="consultationType" value="in-person" class="sr-only" />
+                                <div class="text-center">
+                                    <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="font-semibold">In-Person</div>
+                                    <div class="text-sm text-muted-foreground">₹5,000</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Preferred Date & Time -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Preferred Date *</label>
+                            <input type="date" class="form-input w-full px-4 py-3 rounded-lg text-foreground" 
+                                   data-bind="appointment.date" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Preferred Time *</label>
+                            <select class="form-input w-full px-4 py-3 rounded-lg text-foreground" data-bind="appointment.time" required>
+                                <option value="">Select time slot</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                                <!-- @IMPLEMENTATION: Load available slots dynamically -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Special Requirements -->
+                    <div>
+                        <label class="block text-sm font-medium text-foreground mb-2">Special Requirements or Questions</label>
+                        <textarea class="form-input w-full px-4 py-3 rounded-lg text-foreground placeholder-muted-foreground h-24 resize-none" 
+                                  placeholder="Any specific areas you'd like to focus on during the consultation..." 
+                                  data-bind="appointment.notes"></textarea>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div>
+                        <label class="block text-sm font-medium text-foreground mb-4">Payment Method *</label>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-primary/10 transition-colors">
+                                <input type="radio" name="paymentMethod" value="razorpay" class="sr-only" data-bind="paymentMethod" />
+                                <div class="text-center">
+                                    <div class="font-semibold text-sm">Razorpay</div>
+                                    <div class="text-xs text-muted-foreground">India</div>
+                                </div>
+                            </label>
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-primary/10 transition-colors">
+                                <input type="radio" name="paymentMethod" value="cashfree" class="sr-only" />
+                                <div class="text-center">
+                                    <div class="font-semibold text-sm">Cashfree</div>
+                                    <div class="text-xs text-muted-foreground">India</div>
+                                </div>
+                            </label>
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-primary/10 transition-colors">
+                                <input type="radio" name="paymentMethod" value="stripe" class="sr-only" />
+                                <div class="text-center">
+                                    <div class="font-semibold text-sm">Stripe</div>
+                                    <div class="text-xs text-muted-foreground">International</div>
+                                </div>
+                            </label>
+                            <label class="glass-card p-4 rounded-lg cursor-pointer hover:bg-primary/10 transition-colors">
+                                <input type="radio" name="paymentMethod" value="paypal" class="sr-only" />
+                                <div class="text-center">
+                                    <div class="font-semibold text-sm">PayPal</div>
+                                    <div class="text-xs text-muted-foreground">International</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="glass p-4 rounded-lg">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mt-1" required data-bind="agreedToTerms" />
+                            <div class="text-sm text-muted-foreground">
+                                I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a>, 
+                                <a href="#" class="text-primary hover:underline">Privacy Policy</a>, and understand that 
+                                consultations are non-refundable. Rescheduling is allowed with 24-hour notice.
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-6">
+                        <button type="submit" class="neon-button px-12 py-4 rounded-xl text-lg font-semibold" 
+                                data-event="click:submitBooking">
+                            Proceed to Payment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BookingForm -->
+
+    <!-- Testimonials Section -->
+    <!-- @COMPONENT: TestimonialsSection [Client testimonials and reviews] -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 neon-text text-primary">Client Testimonials</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Discover how Arup Shastri's cosmic guidance has transformed lives across the globe
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- @MAP: testimonials.map(testimonial => ( -->
+                <div class="glass-card rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                            <span class="text-primary-foreground font-bold" data-bind="testimonial.initials">P.S.</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-foreground" data-bind="testimonial.name">Priya Sharma</div>
+                            <div class="text-sm text-muted-foreground" data-bind="testimonial.location">Mumbai, India</div>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-muted-foreground" data-bind="testimonial.content">
+                        "Arup Shastri's insights completely changed my perspective on life. His precise predictions and remedies helped me find clarity in my career path. Highly recommended!"
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4">
+                            <span class="text-secondary-foreground font-bold">M.J.</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-foreground">Michael Johnson</div>
+                            <div class="text-sm text-muted-foreground">New York, USA</div>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-muted-foreground">
+                        "Amazing experience! The video consultation was crystal clear and Arup's knowledge is profound. The gemstone recommendations worked wonders for my relationship."
+                    </p>
+                </div>
+
+                <div class="glass-card rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mr-4">
+                            <span class="text-accent-foreground font-bold">S.M.</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-foreground">Sarah Mitchell</div>
+                            <div class="text-sm text-muted-foreground">London, UK</div>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-muted-foreground">
+                        "The astrology course was incredibly comprehensive. Arup's teaching style is clear and the practical exercises really helped me understand the concepts deeply."
+                    </p>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: TestimonialsSection -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer [Comprehensive footer with all links and information] -->
+    <footer class="py-16 px-4 sm:px-6 lg:px-8 mt-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass-card rounded-2xl p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Brand Section -->
+                    <div class="md:col-span-1">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-12 h-12 rounded-lg bg-primary flex items-center justify-center neon-border">
+                                <span class="text-primary-foreground font-bold text-xl">JG</span>
+                            </div>
+                            <span class="font-bold text-xl neon-text text-primary">Jai Guru Astro Remedy</span>
+                        </div>
+                        <p class="text-muted-foreground mb-6">
+                            Expert Vedic astrology consultations and cosmic guidance by Arup Shastri with 18+ years of experience.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center neon-border hover:scale-110 transition-transform">
+                                <svg class="w-5 h-5 text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="box-shadow: 0 0 20px var(--secondary);">
+                                <svg class="w-5 h-5 text-secondary-foreground" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:scale-110 transition-transform" style="box-shadow: 0 0 20px var(--accent);">
+                                <svg class="w-5 h-5 text-accent-foreground" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.222.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.752-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-6 text-foreground">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#home" class="text-muted-foreground hover:text-primary transition-colors">Home</a></li>
+                            <li><a href="#services" class="text-muted-foreground hover:text-primary transition-colors">Consultations</a></li>
+                            <li><a href="#courses" class="text-muted-foreground hover:text-primary transition-colors">Courses</a></li>
+                            <li><a href="#products" class="text-muted-foreground hover:text-primary transition-colors">Products</a></li>
+                            <li><a href="#about" class="text-muted-foreground hover:text-primary transition-colors">About Arup Shastri</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-6 text-foreground">Services</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-muted-foreground hover:text-primary transition-colors">Video Consultation</a></li>
+                            <li><a href="#" class="text-muted-foreground hover:text-primary transition-colors">Audio Consultation</a></li>
+                            <li><a href="#" class="text-muted-foreground hover:text-primary transition-colors">Chat Consultation</a></li>
+                            <li><a href="#" class="text-muted-foreground hover:text-primary transition-colors">In-Person Reading</a></li>
+                            <li><a href="#" class="text-muted-foreground hover:text-primary transition-colors">Birth Chart Analysis</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-6 text-foreground">Contact</h4>
+                        <ul class="space-y-3">
+                            <li class="text-muted-foreground">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    <span>info@jaiguruastroremedy.com</span>
+                                </div>
+                            </li>
+                            <li class="text-muted-foreground">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                    </svg>
+                                    <span>+91 9999999999</span>
+                                </div>
+                            </li>
+                            <li class="text-muted-foreground">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Available Globally</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="border-t border-border mt-12 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="text-muted-foreground text-sm">
+                            © 2024 Jai Guru Astro Remedy. All rights reserved.
+                        </div>
+                        <div class="flex space-x-6 text-sm">
+                            <a href="#" class="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a>
+                            <a href="#" class="text-muted-foreground hover:text-primary transition-colors">Terms of Service</a>
+                            <a href="#" class="text-muted-foreground hover:text-primary transition-colors">Disclaimer</a>
+                            <a href="#" class="text-muted-foreground hover:text-primary transition-colors">Return Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="neon-button w-16 h-16 rounded-full shadow-2xl hover:scale-110 transition-transform" 
+                data-event="click:quickBooking" title="Quick Booking">
+            <svg class="w-8 h-8 text-primary-foreground mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        (function() {
+            'use strict';
+            
+            // Mobile menu toggle
+            window.toggleMobileMenu = function() {
+                const mobileMenu = document.getElementById('mobileMenu');
+                mobileMenu.classList.toggle('open');
+            };
+
+            // Smooth scrolling for navigation links
+            document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('a[href^="#"]');
+                
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetSection = document.querySelector(targetId);
+                        
+                        if (targetSection) {
+                            targetSection.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                            
+                            // Close mobile menu if open
+                            const mobileMenu = document.getElementById('mobileMenu');
+                            mobileMenu.classList.remove('open');
+                        }
+                    });
+                });
+
+                // Form validation and interaction handlers
+                const consultationForm = document.querySelector('form[data-implementation*="Form validation"]');
+                if (consultationForm) {
+                    consultationForm.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        // TODO: Implement form validation and booking logic
+                        alert('Booking form submitted! Integration with payment gateway pending.');
+                    });
+                }
+
+                // Consultation type selection
+                const consultationTypes = document.querySelectorAll('input[name="consultationType"]');
+                consultationTypes.forEach(type => {
+                    type.addEventListener('change', function() {
+                        // TODO: Update pricing display based on selection
+                        console.log('Consultation type selected:', this.value);
+                    });
+                });
+
+                // Payment method selection
+                const paymentMethods = document.querySelectorAll('input[name="paymentMethod"]');
+                paymentMethods.forEach(method => {
+                    method.addEventListener('change', function() {
+                        // TODO: Update payment integration based on selection
+                        console.log('Payment method selected:', this.value);
+                    });
+                });
+
+                // Course enrollment handlers
+                const enrollButtons = document.querySelectorAll('[data-event*="enrollCourse"]');
+                enrollButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // TODO: Implement course enrollment logic
+                        const courseType = this.getAttribute('data-course') || 'general';
+                        alert(`Enrolling in ${courseType} course! Integration with course management system pending.`);
+                    });
+                });
+
+                // Quick booking floating button
+                const quickBookingBtn = document.querySelector('[data-event*="quickBooking"]');
+                if (quickBookingBtn) {
+                    quickBookingBtn.addEventListener('click', function() {
+                        // TODO: Open quick booking modal or scroll to booking form
+                        document.querySelector('#services').scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    });
+                }
+
+                // Dynamic stars animation
+                function addRandomStars() {
+                    const cosmicBg = document.querySelector('.cosmic-bg');
+                    const star = document.createElement('div');
+                    star.className = 'star';
+                    star.style.top = Math.random() * 100 + '%';
+                    star.style.left = Math.random() * 100 + '%';
+                    star.style.animationDelay = Math.random() * 3 + 's';
+                    cosmicBg.appendChild(star);
+                    
+                    // Remove star after animation completes
+                    setTimeout(() => {
+                        if (star.parentNode) {
+                            star.parentNode.removeChild(star);
+                        }
+                    }, 6000);
+                }
+
+                // Add new stars periodically
+                setInterval(addRandomStars, 2000);
+
+                // Language selector
+                const languageSelector = document.querySelector('select[data-bind="selectedLanguage"]');
+                if (languageSelector) {
+                    languageSelector.addEventListener('change', function() {
+                        // TODO: Implement multilingual support
+                        console.log('Language changed to:', this.value);
+                        // This would trigger translation service integration
+                    });
+                }
+
+                // Geolocation for birth place auto-suggest
+                const birthPlaceInput = document.querySelector('input[data-bind="birthDetails.place"]');
+                if (birthPlaceInput) {
+                    birthPlaceInput.addEventListener('input', function() {
+                        // TODO: Implement geolocation API integration for auto-suggestions
+                        console.log('Searching for location:', this.value);
+                    });
+                }
+
+                // OTP verification simulation
+                function simulateOTPVerification(phoneNumber) {
+                    // TODO: Integrate with Twilio for actual OTP sending
+                    console.log('Sending OTP to:', phoneNumber);
+                    return Promise.resolve('123456'); // Mock OTP
+                }
+
+                // Phone number validation
+                const phoneInput = document.querySelector('input[data-bind="personalInfo.phoneNumber"]');
+                if (phoneInput) {
+                    phoneInput.addEventListener('blur', function() {
+                        const phoneNumber = this.value;
+                        if (phoneNumber && phoneNumber.length >= 10) {
+                            // TODO: Validate phone number format and send OTP
+                            console.log('Validating phone number:', phoneNumber);
+                        }
+                    });
+                }
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all glass cards for scroll animations
+            document.addEventListener('DOMContentLoaded', function() {
+                const animatedElements = document.querySelectorAll('.glass-card, .glass');
+                animatedElements.forEach(el => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(30px)';
+                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    observer.observe(el);
+                });
+            });
+
+        })();
+    </script>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Jai Guru Astro Remedy",
+        "url": "https://www.jaiguruastroremedy.com",
+        "description": "Expert Vedic astrology consultations, courses, and cosmic remedies by Arup Shastri with 18+ years of experience.",
+        "provider": {
+            "@type": "Person",
+            "name": "Arup Shastri",
+            "jobTitle": "Vedic Astrologer",
+            "description": "Expert astrologer with 18+ years of experience in Vedic astrology, palmistry, and numerology."
+        },
+        "serviceType": "Astrology Consultation",
+        "areaServed": "Worldwide",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Astrology Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Video Consultation",
+                        "description": "Personal astrology consultation via video call"
+                    },
+                    "price": "2500",
+                    "priceCurrency": "INR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Audio Consultation",
+                        "description": "Voice-only astrology consultation"
+                    },
+                    "price": "1800",
+                    "priceCurrency": "INR"
+                }
+            ]
+        }
+    }
+    </script>
+</body>
+</html>
