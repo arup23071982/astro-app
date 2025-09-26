@@ -1,5 +1,5 @@
 # System and IDE files
-.local/
+**/.local/
 node_modules/
 dist/
 *.log
@@ -24,7 +24,7 @@ build/
 *.pdf
 *.psd
 
-# Project documentation files (optional - include if you want them in Git)
+# Optional documentation files
 # project-code.txt
 # project-tree.txt
 # scope_of_work.txt
