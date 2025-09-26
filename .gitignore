@@ -1,6 +1,30 @@
-__pycache__/
-*.pyc
+# System and IDE files
+.local/
 node_modules/
+dist/
+*.log
+.DS_Store
+*.tmp
 instance/
-static/
-templates/
+__pycache__/
+
+# Build outputs
+build/
+.out/
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Large files
+*.zip
+*.tar.gz
+*.pdf
+*.psd
+
+# Project documentation files (optional - include if you want them in Git)
+# project-code.txt
+# project-tree.txt
+# scope_of_work.txt
